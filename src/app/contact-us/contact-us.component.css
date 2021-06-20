@@ -1,0 +1,15 @@
+/*css for contact info*/
+ul.contacts li a{
+	
+	color: #7e7e7e;
+	font-size:small;
+    font-weight: 700;
+	text-align: center;
+	transition: all .3s;
+}
+ul.contacts li a:hover{
+	background-color: #0000;
+	color: #f33f3f;
+}
+
+/*css for social media icons*/

@@ -1,0 +1,41 @@
+<!-- ***** Preloader Start ***** -
+<app-preloader></app-preloader>
+<!-- ***** Preloader End ***** -->
+
+<!-- Page Content -->
+<div class="page-heading about-heading header-text" style="background-image: url(assets/images/banners/spiti-2.jpg);">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="text-content ">
+            <h2>Terms And Conditions</h2>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="team-members">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        <!--  <div class="section-heading">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+          </div> -->
+
+          <h5>Terms And Conditions</h5><br><br>
+          <ul>
+            <li *ngFor="let term of terms">
+              <i class="far fa-circle" style="padding-right: 1em ;"></i>{{term}} <br><br>
+            </li>
+          </ul>  
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+
+  <router-outlet></router-outlet>

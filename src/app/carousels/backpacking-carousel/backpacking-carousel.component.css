@@ -1,0 +1,73 @@
+
+
+
+#b-slider .shadows{
+    background:#0000;
+    padding:20px;
+    border-radius: 10px;
+    text-align: center;
+    
+} 
+#b-slider .shadows p{
+    font-family: inherit;
+    font-size: 17px;
+    line-height: 1.5;
+    margin:0 0 17px 0;
+    font-weight:300;
+}
+#b-slider .item{
+    text-align: center;
+	overflow: hidden;
+    margin-bottom: -20px;
+    opacity: 1;
+	width: fit-content;
+	-webkit-transition:all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+    
+}
+
+#b-slider.owl-carousel .owl-item .shadows a{
+    width: fit-content;
+    
+}
+#b-slider img{
+	border-radius: 6px;
+	margin-bottom: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    background-color: #0000;
+    border: none;
+    
+}
+
+#b-slider .item{
+    text-align: center;
+    -webkit-transform: scale3d(0.96,0.96,1);
+    transform: scale3d(0.96,0.96,1);
+    -webkit-transition:all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+ }
+
+#b-slider .item:hover {
+    opacity: 1;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+ }
+ 
+
+
+
+
+#b-slider.item.shadows a{
+	position: relative;
+}
+#b-slider.down-content{
+	white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+display: inherit;
+}
+.owl-theme .owl-dots .owl-dot {
+    outline: none;
+}
