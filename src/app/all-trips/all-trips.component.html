@@ -1,0 +1,111 @@
+
+<!-- ***** Preloader Start ***** -->
+
+<!-- ***** Preloader End ***** -->
+
+
+<!--main content-->
+<div class="page-heading about-heading header-text" style="background-image: url(assets/images/heading-6-1920x500.jpg);">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="text-content">
+            <h2>Backpacking Trips</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="products">
+    <div class="container">
+      <div class="row">
+
+        <!--<div >-->
+          <div class="col-md-4" *ngFor="let category of categories">
+           <div class="product-item">
+              <a [href]='category.route'><img [src]='category.poster' alt=""></a>
+                <div class="down-content">
+                      <a [href]='category.route'><h4>{{category.title}}</h4></a>
+
+                      <small>
+                          <strong title="Cost"><i class="fas fa-rupee-sign"></i>&nbsp;&nbsp;{{category.price}}</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                          <strong title="Length"><i class="far fa-clock"></i>&nbsp;&nbsp;{{category.duration}}</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                          <strong title="Pick &amp; Drop"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;{{category.pdlocation}}</strong>
+                      </small>
+               <!--</div >-->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Book Now</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="contact-form">
+            <form action="#" id="contact">
+                <div class="row">
+                     <div class="col-md-6">
+                        <fieldset>
+                          <input type="text" class="form-control" placeholder="Pick-up location" required="">
+                        </fieldset>
+                     </div>
+
+                     <div class="col-md-6">
+                        <fieldset>
+                          <input type="text" class="form-control" placeholder="Return location" required="">
+                        </fieldset>
+                     </div>
+                </div>
+
+                <div class="row">
+                     <div class="col-md-6">
+                        <fieldset>
+                          <input type="text" class="form-control" placeholder="Pick-up date/time" required="">
+                        </fieldset>
+                     </div>
+
+                     <div class="col-md-6">
+                        <fieldset>
+                          <input type="text" class="form-control" placeholder="Return date/time" required="">
+                        </fieldset>
+                     </div>
+                </div>
+                <input type="text" class="form-control" placeholder="Enter full name" required="">
+
+                <div class="row">
+                     <div class="col-md-6">
+                        <fieldset>
+                          <input type="text" class="form-control" placeholder="Enter email address" required="">
+                        </fieldset>
+                     </div>
+
+                     <div class="col-md-6">
+                        <fieldset>
+                          <input type="text" class="form-control" placeholder="Enter phone" required="">
+                        </fieldset>
+                     </div>
+                </div>
+            </form>
+         </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>

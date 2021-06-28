@@ -1,0 +1,19 @@
+/*contact and map */
+.left-content a{
+	
+	color: #7e7e7e;
+	
+    font-weight: 700;
+	text-align: center;
+	transition: all .3s;
+}
+.left-content a:hover{
+	background-color: #0000;
+	color: #f33f3f;
+}
+
+.reveal {
+	width: 100px;
+	min-width: unset;
+	margin: .5rem;
+}
