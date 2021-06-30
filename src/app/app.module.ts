@@ -63,7 +63,8 @@ import {GtagModule} from "angular-gtag";
 import { EnquiryComponent } from './enquiry/enquiry.component';
 import { BookNowComponent } from './book-now/book-now.component';
 import { ModalComponent } from './modal/modal.component';
-
+import { HttpClientModule } from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -123,6 +124,8 @@ import { ModalComponent } from './modal/modal.component';
     AppRoutingModule,
     RouterModule,
     BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule,
     MatSliderModule,
     MatButtonModule,
     MatTabsModule,
