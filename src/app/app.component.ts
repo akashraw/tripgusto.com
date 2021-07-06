@@ -5,7 +5,7 @@ import { Title } from '@angular/platform-browser';
 import { filter } from 'rxjs/operators';
 import { map } from 'rxjs/operators';
 import { TitleService } from './/title.service';
-import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+
 declare var $:any;
 
 declare let gtag;
@@ -18,15 +18,7 @@ declare const navEndEvent;
 
 export class AppComponent implements OnInit{
   title='analytics';  
-  public sendEmail(e: Event) {
-    e.preventDefault();
-    emailjs.sendForm('service_u18lfso', 'template_l7s0gkd', e.target as HTMLFormElement, 'user_qr8XtgpBb1qNh8naHnsTu')
-      .then((result: EmailJSResponseStatus) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
-  }
+
   
   constructor(  private router: Router, 
                 private activatedRoute: ActivatedRoute, 

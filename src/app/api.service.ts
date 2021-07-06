@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ApiService {
 
-  PHP_API_SERVER = "http://localhost/tryd";
+  PHP_API_SERVER = "http://localhost/backend";
 	constructor(private httpClient: HttpClient) {}
 	// readProducts(): Observable<CData[]>{
 	// 	return this.httpClient.get<CData[]>(`${this.PHP_API_SERVER}/index.php`);

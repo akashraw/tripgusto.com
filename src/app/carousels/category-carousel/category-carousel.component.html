@@ -1,0 +1,73 @@
+<div class="trips-slider">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Category</h2>
+          </div>
+          <div id="category-sliders" class="owl-carousel owl-theme" >
+  
+            <!-- 1 -->
+            <div class="item" *ngFor="let cat of category.routes; let i=index">
+              <div class="shadows" >     
+                <a [routerLink]="['/category', cat]" (click)="onClick(category.pass[i])"><img src="{{category.slides[i]}}" alt=""></a>
+               
+            </div>
+           </div>
+  
+            <!-- 2
+            <div class="item">
+                <div class="shadows">
+                    <div>
+                  <a routerLink="/weekend"><img src="assets/images/category/weekend-poster.jpg" alt=""></a>
+                </div>
+                
+              </div>
+            </div>
+  
+            3 -->
+            <!-- <div class="item">
+                <div class="shadows">
+                    <div>
+                  <a routerLink="/pilgrim"><img src="assets/images/category/pilgrim-poster.jpg" alt=""></a>
+                </div>
+               
+            </div>
+              </div>
+               -->
+            <!-- 4 -->
+            <!-- <div class="item">
+                <div class="shadows">
+                    <div >
+                  <a routerLink="/category/" ><img src="assets/images/category/trek-poster.jpg" alt=""></a>
+                </div>
+                
+            </div>
+              </div> -->
+  
+            <!--  5 
+            <div class="item">
+                <div class="shadows">
+                    <div>
+                  <a routerLink="/weekend"><img src="assets/images/category/weekend-poster.jpg" alt=""></a>
+                </div>
+                
+            </div>
+              </div>-->
+  
+            <!--  6
+            <div class="item">
+              <div class="shadows">
+                  <div>
+                <a routerLink="/backpacking"><img src="assets/images/category/backpacking-poster.jpg" alt=""></a>
+              </div>
+              
+          </div>
+            </div> -->
+  
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

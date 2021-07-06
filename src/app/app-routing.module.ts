@@ -2,13 +2,7 @@ import { Title } from '@angular/platform-browser';
 import { KasolManaliBackComponent } from './all-trips/trips-details/kasol-manali-back/kasol-manali-back.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { CancellationComponent } from './cancellation/cancellation.component';
-import { AllGirlsComponent } from './category/all-girls/all-girls.component';
-import { BackpackingComponent } from './category/backpacking/backpacking.component';
-import { CorporateComponent } from './category/corporate/corporate.component';
-import { PilgrimComponent } from './category/pilgrim/pilgrim.component';
-import { PrivateComponent } from './category/private/private.component';
-import { TreksComponent } from './category/treks/treks.component';
-import { WeekendComponent } from './category/weekend/weekend.component';
+
 import { WinterSpitiBackComponent } from './all-trips/trips-details/winter-spiti-back/winter-spiti-back.component';
 import { ValleyOfFlowersComponent } from './all-trips/trips-details/valley-of-flowers/valley-of-flowers.component';
 import { TrithanValleyComponent } from './all-trips/trips-details/trithan-valley/trithan-valley.component';
@@ -39,6 +33,7 @@ import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BlogDetailsComponent } from './blogs/blog-details/blog-details.component';
 import { AuliComponent } from './all-trips/trips-details/auli/auli.component';
+import { CategoryDetailComponent } from './category/category-detail/category-detail.component';
 
 
 const routes: Routes = [
@@ -69,27 +64,18 @@ const routes: Routes = [
   {
     path:'terms',component:TermsComponent, pathMatch:'full', data:{title: 'Terms'}
   },
+  //category routes start
   {
-    path:'weekend', component: WeekendComponent, pathMatch:'full', data:{title: 'Weekend'}
+    path:'category/:rou', component: CategoryDetailComponent, pathMatch:'full', data:{title: 'Weekend Getaway Trips'}
+    // children:[
+    //   { path:'weekend', component: CategoryDetailComponent, pathMatch:'full', data:{title: 'Weekend Getaway Trips'}},
+    //   { path:'backpacking', component: CategoryDetailComponent, pathMatch:'full', data:{title: 'Backpacking Trips'}},
+    //   { path:'pilgrim', component: CategoryDetailComponent, pathMatch:'full', data:{title: 'Pilgrim'}},
+    //   { path:'trek', component: CategoryDetailComponent, pathMatch:'full', data:{title: 'Trek'}},
+    // ]
   },
-  {
-    path:'treks', component: TreksComponent, pathMatch:'full', data:{title: 'Treks'}
-  },
-  {
-    path:'private-trek', component: PrivateComponent, pathMatch:'full', data:{title: 'Private Trek'}
-  },
-  {
-    path:'pilgrim', component: PilgrimComponent, pathMatch:'full', data:{title: 'Pilgrim'}
-  },
-  {
-    path:'corporate', component: CorporateComponent, pathMatch:'full', data:{title: 'Corporate Trips'}
-  },
-  {
-    path:'backpacking', component: BackpackingComponent, pathMatch:'full', data:{title: 'Backpacking Trips'}
-  },
-  {
-    path:'all-girls', component: AllGirlsComponent, pathMatch:'full', data:{title: 'All Girls Trip'}
-  },
+  //category routes ends
+  //trip routes
   {
     path:'trip', 
     children:[
@@ -114,6 +100,7 @@ const routes: Routes = [
       { path:'uttarakhand-back',component:UttarakhandBackpackingComponent, pathMatch:'full', data:{title: 'Uttarakhand Backpacking'} }     
     ]
   },
+  //misc routes
   {
     path:'blogs',component:BlogsComponent, pathMatch:'full', data:{title: 'Blogs'}
   },
@@ -133,3 +120,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+export const RoutedBasicComponents = [TestComponent, NoPageComponent, BlogDetailsComponent, BlogsComponent, TermsComponent, TestimonialsComponent, PrivacyComponent, CancellationComponent, ContactUsComponent, HomeComponent, AboutUsComponent]
+export const RoutedTripComponents = [UttarakhandBackpackingComponent, WinterSpitiBackComponent, ValleyOfFlowersComponent, TrithanValleyComponent, RishikeshRetreatComponent, ParvatiValleyComponent, NagTibbaComponent, ManaliKasolTrithanBackComponent, KinnaurValleyBackComponent, KedarnathDhamComponent, KedarkanthaTrekComponent, KedarBadriDhamComponent, KasolManaliBackComponent, KasolKeergangaWeekendComponent, HarKiDunTrekComponent, ChoptaChandrashillaWeekendComponent, CharDhamComponent,BadrinathDhamComponent, AuliComponent]
