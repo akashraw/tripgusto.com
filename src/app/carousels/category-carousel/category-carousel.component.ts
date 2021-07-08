@@ -1,7 +1,6 @@
 import { Component, OnInit, Output, EventEmitter} from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CategoryService } from 'src/app/category.service';
-import { Category } from 'src/app/category/category';
 
 @Component({
   selector: 'app-category-carousel',
@@ -9,10 +8,6 @@ import { Category } from 'src/app/category/category';
   styleUrls: ['./category-carousel.component.css']
 })
 export class CategoryCarouselComponent implements OnInit {
-@Output() passRoute = new EventEmitter ();
- // catego: Category[];
- // nCat: Category[];
-
  
   constructor(
       public catService: CategoryService,

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { CategoryService } from '../category.service';
-import { Category } from '../category/category';
+import { TripClass } from '../TripDataClass';
 
 @Component({
   selector: 'app-home',
@@ -11,8 +11,8 @@ import { Category } from '../category/category';
 })
 export class HomeComponent implements OnInit {
 
-  catego: Category[];
-  nCat: Category[];
+  catego: TripClass[];
+  nCat: TripClass[];
   test: ['Backpacking Trip', 'Weekend Trip', 'Pilgrim', 'Trek'];
   constructor(
       public catService: CategoryService,

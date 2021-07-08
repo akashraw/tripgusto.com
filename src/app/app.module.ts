@@ -32,6 +32,7 @@ import { FormsModule } from '@angular/forms';
 import { CategoryService } from './category.service';
 import { CategoryCarouselComponent } from './carousels/category-carousel/category-carousel.component';
 import { CategoryDetailComponent } from './category/category-detail/category-detail.component';
+import { TripDetailComponent } from './trip-detail/trip-detail.component';
 
 
 @NgModule({
@@ -52,7 +53,8 @@ import { CategoryDetailComponent } from './category/category-detail/category-det
     BookNowComponent,
     ModalComponent,
     CategoryCarouselComponent,
-    CategoryDetailComponent
+    CategoryDetailComponent,
+    TripDetailComponent
     
   ],
   imports: [

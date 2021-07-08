@@ -34,6 +34,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BlogDetailsComponent } from './blogs/blog-details/blog-details.component';
 import { AuliComponent } from './all-trips/trips-details/auli/auli.component';
 import { CategoryDetailComponent } from './category/category-detail/category-detail.component';
+import { TripDetailComponent } from './trip-detail/trip-detail.component';
 
 
 const routes: Routes = [
@@ -64,9 +65,13 @@ const routes: Routes = [
   {
     path:'terms',component:TermsComponent, pathMatch:'full', data:{title: 'Terms'}
   },
+  //trip detail
+  {
+    path:'trips/:TripRoute', component: TripDetailComponent, pathMatch:'full', data:{title: 'Weekend Getaway Trips'}
+  },
   //category routes start
   {
-    path:'category/:rou', component: CategoryDetailComponent, pathMatch:'full', data:{title: 'Weekend Getaway Trips'}
+    path:'category/:CatDetailRoute', component: CategoryDetailComponent, pathMatch:'full', data:{title: 'Weekend Getaway Trips'}
     // children:[
     //   { path:'weekend', component: CategoryDetailComponent, pathMatch:'full', data:{title: 'Weekend Getaway Trips'}},
     //   { path:'backpacking', component: CategoryDetailComponent, pathMatch:'full', data:{title: 'Backpacking Trips'}},
