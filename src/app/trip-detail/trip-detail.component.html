@@ -53,7 +53,7 @@
   <!--trip carousel with navi thumb end-->
   
         <div class="col-md-6">
-          <div class="row" style="text-align: center; margin-bottom: 2rem;">
+          <!-- <div class="row" style="text-align: center; margin-bottom: 2rem;">
             <div  style="text-align: center;">
               <div><i class="fas fa-rupee-sign" style="font-size:25px"></i></div>
               <div>Starting at</div>
@@ -71,13 +71,56 @@
               <div><i class="fas fa-map-marker-alt" style="font-size:25px"></i></div>
                 <div>Pick Up &amp; Drop:</div>
                 <div><strong style="font-weight: bold; font-size:25px;">{{tripVar.pdlocation}}</strong></div>
-        <!--  <p class="lead">
-              &nbsp;Starting at &nbsp;<strong style="font-size:25px; font-weight: bold;">₹16,499</strong> <br><br> <i class="far fa-clock" style="font-size:25px"></i>&nbsp;<strong style="font-weight: bold;">{{trip.Length}}</strong> &nbsp;&nbsp; <i class="fas fa-map-marker-alt" style="font-size:25px"></i>&nbsp;Pick Up &amp; Drop: <strong style="font-weight: bold;">Delhi</strong> 
-            </p>
-            <br><br>  -->  
+        
           </div>
-          </div>
-          
+          </div> -->
+          <table style="text-align: center; table-layout: fixed;">
+            <thead>
+              <tr>
+                
+                <th>
+                  <div><i class="fas fa-rupee-sign" style="font-size:25px"></i></div>
+              </th>
+                <th>
+                    <div><i class="far fa-clock" style="font-size:25px"></i></div>
+                </th>
+                <th>
+                  
+                    <div><i class="fas fa-map-marker-alt" style="font-size:25px"></i></div>
+              <!--  <p class="lead">
+                    &nbsp;Starting at &nbsp;<strong style="font-size:25px; font-weight: bold;">₹16,499</strong> <br><br> <i class="far fa-clock" style="font-size:25px"></i>&nbsp;<strong style="font-weight: bold;">{{trip.Length}}</strong> &nbsp;&nbsp; <i class="fas fa-map-marker-alt" style="font-size:25px"></i>&nbsp;Pick Up &amp; Drop: <strong style="font-weight: bold;">Delhi</strong> 
+                  </p>
+                  <br><br>  -->
+                </th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div>Starting at</div>
+              </td>
+              <td>
+                <div>Duration</div>
+              </td>
+              <td>
+                <div>Pick Up &amp; Drop:</div>
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>
+                <div><strong style="font-size:25px; font-weight: bold;">{{tripVar.price}}</strong></div>
+              </td>
+              <td>
+                <div><strong  style="font-weight: bold; font-size:25px;">{{tripVar.duration}}</strong></div>
+              </td>
+              <td>
+                <div><strong style="font-weight: bold; font-size:25px;">{{tripVar.pdlocation}}</strong></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
             <p style="font-size: medium;">
               {{tripVar.Overview.part1}} <br><br>        
               {{tripVar.Overview.part2}} <br><br>   
@@ -108,12 +151,14 @@
                             <div class="row">                        
                                 <div class="col-md-2 col-sm-3" >
                       
-                                   <p><strong>{{trips}}</strong></p>
+                                   <p><strong style="font-weight: 600; font-size: large;">{{trips}}</strong></p>
                       
                                 </div>
                                 <div class="col-md-10 col-sm-9 ">
-                                  <p>{{tripVar.Itinerary.head[i]}}
+                                  <p style="font-weight: 600; font-size: 16px; ">{{tripVar.Itinerary.head[i]}}
                                     <br><br>
+                                  </p>
+                                  <p style="font-weight: 500; font-size: 16px; ">
                                     {{tripVar.Itinerary.body[i]}}
                                   </p>
                                 </div>
@@ -235,76 +280,30 @@
       </div>
   
   <!--map and contact-->
-  <div class="section" id="map">
+  <app-enquiry></app-enquiry>  
+  
+  
+   <!--maps-->
+   <div class="section" id="map">
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12">
           <div class="section-heading">
-            <h2>Map</h2>
+            <h2>Map and Route</h2>
           </div>
-          <div class= "map-responsive"  >
-           <iframe [src]="urlSafe " width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+          <div class= "map-responsive"  style="text-align: center;">
+           <iframe [src]="urlSafe " width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" ></iframe> 
         </div>
+        </div> 
       </div>
-  
-        <div class="col-md-4">
-          <div class="section-heading">
-            <h2>Contact Details</h2>
-          </div>
-          
-          <div class="left-content" style="text-align: center;">
-            <p><!-- 
-              <span>Name</span>
-  
-              <br>
-  
-              <strong>Pars</strong>
-            </p> 
-                  -->
-              
-  
-            <p>
-              <span>Mobile Phone</span>
-  
-              <br>
-              
-              <strong>
-                <a href="tel:+ 91 9760 262 794">+ 91 7906 613 988</a>
-              </strong>
-            </p>
-  
-            <p>
-              <span>Mobile phone</span>
-  
-              <br>
-              
-              <strong>
-                <a href="tel:+ 91 8439 368 574">+ 91 9456 345 148</a>
-              </strong>
-            </p>
-  
-            <p>
-              <span>Email</span>
-  
-              <br>
-              
-              <strong>
-                <a href="mailto:helpme@tripgusto.com">helpme@tripgusto.com</a>
-              </strong>
-            </p>
-          
-            <!--<div class="contact-form">
-              <button type="submit" class="filled-button">Request Details</button>
-            </div>-->
-          </div>
+      <div class="row" style="margin-top: 3em;">
+        <div class="col-md-12">   
+          <p>NOTE: Travellers residing outside Delhi are suggested to book trains/flights reaching Delhi not later than 4 PM on the trip start date. Similarly, on trip end date, book returning flight/trains leaving post 2 PM.</p>
         </div>
       </div>
     </div>
   </div>
-  
-  
-   <!--enquiry-->
-   <app-enquiry></app-enquiry>
+   
   
   <app-footer></app-footer>
     

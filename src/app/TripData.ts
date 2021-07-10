@@ -24,7 +24,7 @@ export const TripData: TripClass[]  = [
     //    },
 
     //   Itinerary:{
-    //     days:['Day 0:', 'Day 1', 'Day 2:', 'Day 3:', 'Day 4:',],
+    //     days:['Day 0:', 'Day 1:', 'Day 2:', 'Day 3:', 'Day 4:',],
     //     head:['Departure from Delhi:', 
     //           'Rishikesh to Auli (280 KM):', 
     //           'Auli Excursion:', 
@@ -154,7 +154,7 @@ export const TripData: TripClass[]  = [
         part4:null,      
             },
        Itinerary:{
-        days:['Day 1:', 'Day 2', 'Day 3:',],
+        days:['Day 1:', 'Day 2:', 'Day 3:',],
         head:['Rishikesh to Badrinath:', 
               'Badrinath sightseeing:', 
               'Badrinath to Rishikesh:'
@@ -263,7 +263,7 @@ export const TripData: TripClass[]  = [
        },
 
       Itinerary:{
-        days:['Day 1:', 'Day 2', 'Day 3:', 'Day 4:', 'Day 5:', 'Day 6:', 'Day 7:','Day 8:', 'Day 9:', 'Day 10:', 'Day 11:'],
+        days:['Day 1:', 'Day 2:', 'Day 3:', 'Day 4:', 'Day 5:', 'Day 6:', 'Day 7:','Day 8:', 'Day 9:', 'Day 10:', 'Day 11:'],
         head:['Rishikesh Local Sightseeing:',
               'Rishikesh to Barkot', 
               'Barkot to Yamunotri and then back to Barkot.', 
@@ -394,7 +394,7 @@ export const TripData: TripClass[]  = [
        },
 
       Itinerary:{
-        days:['Day 0:', 'Day 1', 'Day 2:', 'Day 3:', 'Day 4:',],
+        days:['Day 0:', 'Day 1:', 'Day 2:', 'Day 3:', 'Day 4:',],
         head:['Departure from Delhi:',
               'Chopta', 
               'Trek to Tungnath and Chandrashila:', 
@@ -507,7 +507,7 @@ export const TripData: TripClass[]  = [
        },
 
       Itinerary:{
-        days:['Day 1:', 'Day 2', 'Day 3:', 'Day 4:', 'Day 5:', 'Day 6:', 'Day 7:'],
+        days:['Day 1:', 'Day 2:', 'Day 3:', 'Day 4:', 'Day 5:', 'Day 6:', 'Day 7:'],
         head:['Departure from Dehradun:', 
               'Sankari to Taluka then Trek to Seema:', 
               'Seema to Har Ki Dun:', 
@@ -626,7 +626,7 @@ export const TripData: TripClass[]  = [
        },
 
       Itinerary:{
-              days:['Day 0:', 'Day 1', 'Day 2:', 'Day 3:', 'Day 4:',],
+              days:['Day 0:', 'Day 1:', 'Day 2:', 'Day 3:', 'Day 4:',],
               head:['Departure from Delhi:',
                     'Kasol:', 
                     'Barshaini to Kheerganga:', 
@@ -737,7 +737,7 @@ export const TripData: TripClass[]  = [
        },
 
       Itinerary:{
-        days:['Day 0:', 'Day 1', 'Day 2:', 'Day 3:', 'Day 4:', 'Day 5:', 'Day 6 :' ],
+        days:['Day 0:', 'Day 1:', 'Day 2:', 'Day 3:', 'Day 4:', 'Day 5:', 'Day 6:' ],
         head:['Departure from Delhi:', 
               'Kasol:', 
               'Barshaini to Kheerganga:', 
@@ -861,7 +861,7 @@ export const TripData: TripClass[]  = [
        },
 
       Itinerary:{
-              days:['Day 0:', 'Day 1', 'Day 2:', 'Day 3:', 'Day 4:', 'Day 5:',],
+              days:['Day 0:', 'Day 1:', 'Day 2:', 'Day 3:', 'Day 4:', 'Day 5:',],
               head:[' Rishikesh To Guptkashi:', 
               'Gupkashi to Kedarnath:', 
               ' Kedarnath to Joshimath via Guptkashi.:', 
@@ -984,7 +984,7 @@ export const TripData: TripClass[]  = [
        },
 
       Itinerary:{
-        days:['Day 1:', 'Day 2', 'Day 3:', 'Day 4:', 'Day 5:',],
+        days:['Day 1:', 'Day 2:', 'Day 3:', 'Day 4:', 'Day 5:',],
         head:['Departure from Dehradun to Sankari.:', 
               'Sankari to Juda ka Talab:', 
               'Juda ka Talab to Base Camp:', 
@@ -1098,7 +1098,7 @@ export const TripData: TripClass[]  = [
        },
 
       Itinerary:{
-        days:['Day 1:', 'Day 2', 'Day 3:', 'Day 4:',],
+        days:['Day 1:', 'Day 2:', 'Day 3:', 'Day 4:',],
         head:[' Dehradun To Guptkashi:', 
               'Guptkashi to kedarnath:', 
               'Kedarnath to Guptkashi:', 
@@ -1222,7 +1222,7 @@ export const TripData: TripClass[]  = [
        },
 
       Itinerary:{
-              days:['Day 0:', 'Day 1', 'Day 2:', 'Day 3:', 'Day 4:', 'Day 5:', 'Day 6:'],
+              days:['Day 0:', 'Day 1:', 'Day 2:', 'Day 3:', 'Day 4:', 'Day 5:', 'Day 6:'],
               head:[ 
                     'Evening Departure From Delhi To Shimla:', 
                     'Shimla to Kalpa (Overnight Stay At Kalpa):', 
@@ -1341,7 +1341,7 @@ export const TripData: TripClass[]  = [
        },
 
       Itinerary:{
-        days:['Day 0:', 'Day 1', 'Day 2:', 'Day 3:', 'Day 4:', 'Day 5:', 'Day 6:'],
+        days:['Day 0:', 'Day 1:', 'Day 2:', 'Day 3:', 'Day 4:', 'Day 5:', 'Day 6:'],
 
         head:['Departure from Delhi:', 
               'Manali Excursion:', 
@@ -1459,7 +1459,7 @@ export const TripData: TripClass[]  = [
     //    },
 
     //   Itinerary:{
-    //     days:['Day 0:', 'Day 1', 'Day 2:', 'Day 3:',],
+        // days:['Day 0:', 'Day 1:', 'Day 2:', 'Day 3:',],
     //     head:['Departure from Delhi:',
     //           'Pantwari Village:', 
     //           'Trek to Nag Tibba Summit',
@@ -1568,7 +1568,7 @@ export const TripData: TripClass[]  = [
        },
 
       Itinerary:{
-        days:['Day 0:', 'Day 1', 'Day 2:', 'Day 3:', 'Day 4:', 'Day 5:', 'Day 6:'],
+        days:['Day 0:', 'Day 1:', 'Day 2:', 'Day 3:', 'Day 4:', 'Day 5:', 'Day 6:'],
         head:['Departure from Delhi:', 
               'Kasol : Excursion to Chalal Village:', 
               'Excursion to Malana Village:', 
@@ -1691,7 +1691,7 @@ export const TripData: TripClass[]  = [
        },
 
       Itinerary:{
-        days:['Day 0:', 'Day 1', 'Day 2:', 'Day 3:', 'Day 4:',],
+        days:['Day 0:', 'Day 1:', 'Day 2:', 'Day 3:', 'Day 4:',],
         head:['Departure from Delhi:', 
               'Rishikesh:', 
               'Rishikesh Nature Escapade:', 
@@ -1805,7 +1805,7 @@ We’ll be departing from Delhi in the evening. And hence most of the road journ
        },
 
       Itinerary:{
-        days:['Day 0:', 'Day 1', 'Day 2:', 'Day 3:', 'Day 4:'],
+        days:['Day 0:', 'Day 1:', 'Day 2:', 'Day 3:', 'Day 4:'],
         head:['Departure from Delhi:', 
               'Arrival Jibhi :', 
               'Excursion to Serolsar lake and Jalori pass.', 
@@ -1920,7 +1920,7 @@ We’ll be departing from Delhi in the evening. And hence most of the road journ
        },
 
       Itinerary:{
-        days:['Day 0:', 'Day 1', 'Day 2:', 'Day 3:', 'Day 4:', 'Day 5:', 'Day 6:'],
+        days:['Day 0:', 'Day 1:', 'Day 2:', 'Day 3:', 'Day 4:', 'Day 5:', 'Day 6:'],
         head:['Departure from Delhi:', 
               'Chopta:', 
               'Trek to Tungnath and Chandrashila; Travel to Joshimath:', 
@@ -2066,7 +2066,7 @@ We’ll be departing from Delhi in the evening. And hence most of the road journ
        },
 
       Itinerary:{
-        days:['Day 1:', 'Day 2', 'Day 3:', 'Day 4:', 'Day 5:'],
+        days:['Day 1:', 'Day 2:', 'Day 3:', 'Day 4:', 'Day 5:'],
         head:['Rishikesh to Joshimath (275 km):', 
               'Joshimath to Govindghat and trek to Ghangaria:', 
               'Ghangaria to Valley of Flower and back to Ghangaria( 7-8km):', 
@@ -2188,7 +2188,7 @@ We’ll be departing from Delhi in the evening. And hence most of the road journ
        },
 
       Itinerary:{
-        days:['Day 0:', 'Day 1', 'Day 2:', 'Day 3:', 'Day 4:', 'Day 5:', 'Day 6:','Day 7:','Day 8:'],
+        days:['Day 0:', 'Day 1:', 'Day 2:', 'Day 3:', 'Day 4:', 'Day 5:', 'Day 6:','Day 7:','Day 8:'],
         head:['Departure from Delhi:', 
               'Shimla to Kalpa:', 
               'Kalpa to kaza:', 

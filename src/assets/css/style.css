@@ -995,7 +995,7 @@ footer .inner-content p a {
 	color: #fff;
 	font-size: 16px;
 	text-transform: capitalize;
-	font-weight: 600;
+	font-weight: 500;
 	padding: 10px 20px;
 	border-radius: 20px;
 	display: inline-block;
@@ -1003,6 +1003,7 @@ footer .inner-content p a {
 	border: none;
 	outline: none;
 	cursor: pointer;
+	width: 200px;
 }
 
 .contact-form button.filled-button:hover {
@@ -1157,6 +1158,8 @@ footer .inner-content p a {
 .section .section-heading {
 	margin-bottom: 45px;
 }
+
+
 
 
 /* Responsive Style */
