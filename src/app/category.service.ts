@@ -12,10 +12,4 @@ export class CategoryService {
   getCategory(): TripClass[] {
     return TripData;
   }
-  passRoute(routeVar){
-    return this.passingVar=routeVar
-  }
-  getCatRoute(): string{
-    return this.passingVar
-  }
 }

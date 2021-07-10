@@ -19,4 +19,5 @@ export class TripClass {
   public slides;
   public costing;
   public occupancy;
+  public gmap;
 }

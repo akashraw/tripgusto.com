@@ -9,14 +9,11 @@ import { AppRoutingModule, RoutedBasicComponents, RoutedTripComponents } from '.
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { PreloaderComponent } from './preloader/preloader.component';
-import { AllTripsComponent } from './all-trips/all-trips.component';
 import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
 import { MatListModule} from '@angular/material/list';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
-
-
 import { TrendingCarouselComponent } from './carousels/trending-carousel/trending-carousel.component';
 import { WeekendCarouselComponent } from './carousels/weekend-carousel/weekend-carousel.component';
 import { BackpackingCarouselComponent } from './carousels/backpacking-carousel/backpacking-carousel.component';
@@ -41,8 +38,7 @@ import { TripDetailComponent } from './trip-detail/trip-detail.component';
     RoutedBasicComponents,
     RoutedTripComponents,
     FooterComponent,
-    PreloaderComponent,
-    AllTripsComponent,    
+    PreloaderComponent,  
     HeaderComponent,    
     
     TrendingCarouselComponent,
@@ -54,7 +50,8 @@ import { TripDetailComponent } from './trip-detail/trip-detail.component';
     ModalComponent,
     CategoryCarouselComponent,
     CategoryDetailComponent,
-    TripDetailComponent
+    TripDetailComponent,
+    
     
   ],
   imports: [

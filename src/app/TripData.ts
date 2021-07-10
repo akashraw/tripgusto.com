@@ -1,133 +1,136 @@
 import { TripClass } from "./TripDataClass"
 
 export const TripData: TripClass[]  = [
-    
-    {
-      id: 1,
-      title:'Auli',
-      route:'chopta-chandrashills-weekend',
-      subtitle:'Stay Trip',
-      avail:'All Year',
-      Travel:'Travel Included',
-      poster:"assets/images/uk-backpacking/slider/chopta.jpg",
-      duration:'3D- 2N',
-      price:'7999',
-      pdlocation:'Delhi',
-      categor: 'Weekend Getaway Trips',
-      mbImg:'background-image: url(assets/images/auli/auli-mb.jpg);',
-      Overview:{
-        part1:`Apart from being an exhilarating skiing destination, Auli is also known for its magnificent views of Nanda Devi Peak, Ghora Parbat, Hathi Parvat, Beethartoli, and many more. The peaks around Auli are fanatical. You can see “The sleeping beauty” a few Himalayan peaks aligned in a way that looks like a peerless dame sleeping nearby.`,
-        part2:`This hidden jewel offers a fanatical excursion to Gurson Top via rhododendrons and alpine forests. This is the perfect offbeat destination for your introduction to the flavors of Garhwal. The nights are long and starry and on lucky days one can scale the milky way`,  
-        part3:`The weekend retreat is preferred as this place is open year-round`,
-        part4:null,      
-       },
+  // Auli
+    // {
+    //   id: 1,
+    //   title:'Auli',
+    //   route:'chopta-chandrashills-weekend',
+    //   subtitle:'Stay Trip',
+    //   avail:'All Year',
+    //   Travel:'Travel Included',
+    //   poster:"assets/images/uk-backpacking/slider/chopta.jpg",
+    //   duration:'3D- 2N',
+    //   price:'7999',
+    //   pdlocation:'Delhi',
+    //   categor: 'Weekend Getaway Trips',
+    //   mbImg:'background-image: url(assets/images/auli/auli-mb.jpg);',
+    //   ggmap:null,
+    //   Overview:{
+    //     part1:`Apart from being an exhilarating skiing destination, Auli is also known for its magnificent views of Nanda Devi Peak, Ghora Parbat, Hathi Parvat, Beethartoli, and many more. The peaks around Auli are fanatical. You can see “The sleeping beauty” a few Himalayan peaks aligned in a way that looks like a peerless dame sleeping nearby.`,
+    //     part2:`This hidden jewel offers a fanatical excursion to Gurson Top via rhododendrons and alpine forests. This is the perfect offbeat destination for your introduction to the flavors of Garhwal. The nights are long and starry and on lucky days one can scale the milky way`,  
+    //     part3:`The weekend retreat is preferred as this place is open year-round`,
+    //     part4:null,      
+    //    },
 
-      Itinerary:{
-        days:['Day 0:', 'Day 1', 'Day 2:', 'Day 3:', 'Day 4:',],
-        head:['Departure from Delhi:', 
-              'Rishikesh to Auli (280 KM):', 
-              'Auli Excursion:', 
-              'Auli: Rishikesh: Delhi:'
-             ],
-        body:[//day 0 body
-              `Departure from Delhi. Though we are embarking on a chill getaway a proper rest is needed too for the fun of a lifetime. Take the complete rest.`,
-              //day 1 body
-               `It all starts with an early morning departure from Rishikesh. With a spectacular 10 to 11 hrs drive along the majestic Ganges Valley to Joshimath which is situated at the altitude of 6100ft. Though high-speed networks are available all along the way I doubt you would be using any as the morning glimpses along the Ganges valley is breathtaking. Needless to worry we got you covered with tea and meal breaks for those grumbling tummies. For tea lovers, you are in luck, as this is Uttarakhand and tea is the only bonding beverage here. 
+    //   Itinerary:{
+    //     days:['Day 0:', 'Day 1', 'Day 2:', 'Day 3:', 'Day 4:',],
+    //     head:['Departure from Delhi:', 
+    //           'Rishikesh to Auli (280 KM):', 
+    //           'Auli Excursion:', 
+    //           'Auli: Rishikesh: Delhi:'
+    //          ],
+    //     body:[//day 0 body
+    //           `Departure from Delhi. Though we are embarking on a chill getaway a proper rest is needed too for the fun of a lifetime. Take the complete rest.`,
+    //           //day 1 body
+    //            `It all starts with an early morning departure from Rishikesh. With a spectacular 10 to 11 hrs drive along the majestic Ganges Valley to Joshimath which is situated at the altitude of 6100ft. Though high-speed networks are available all along the way I doubt you would be using any as the morning glimpses along the Ganges valley is breathtaking. Needless to worry we got you covered with tea and meal breaks for those grumbling tummies. For tea lovers, you are in luck, as this is Uttarakhand and tea is the only bonding beverage here. 
 
-                Driving through national highway 58 you would come across one of the most wondrous places on the face of earth Devprayag.
-                Here witness the confluence of the mysticism through the rivers Bhagirathi and Alaknanda transcending into Ganga. 
-                This would be the first Prayag out of five (where two rivers meet each other) which you would be witnessing on this route.
-                The route is mostly lively until you enter Srinagar where lies the foundation of one of the largest Universities in India. 
-                This city also takes pride in one of the biggest dams ever constructed on the river Alaknanda. Next, we would be passing through the bustling streets of Rudraprayag. 
-                The second Prayag out of the five where you will witness the convergence of river Mandakini and river Alaknanda. While leaving the city you will witness some breathtaking scenes. 
-                Trust me this doesn’t stop here and by the way tea lovers, what good is a tea without the tanginess of pakoras and we have got you covered here as well to take a moment and sink in the flavor of tea, tangy pakoras, and nature.
-                Next is Karnprayag the third Prayag out of five where you will witness the confluence of river Pindar and river Alaknanda. Pindar river is blue as the sky, it always leaves me in awe. 
-                Next in line is the fourth Prayag, Nandprayag. 
-                Here you will witness the convergence of the river Mandakini and river Alaknanda. 
-                The town is relatively small but has its delicacies. 
-                Through the hustling roads from Chamoli city, we will be crossing Helang. 
-                This place has a vibe. Now we will be climbing over the clouds, this place is the elevator of the mountains. From this place, things will start bewildering your mind. 
-                The northern wind calls for an adventure junkie. Soaring through these valleys we will take our first stop at Joshimath and then a short ride to Auli. 
-                The 11 Km escapade. The key is to get checked in as early as possible. With scrumptious food waiting for you, the nights are gonna be spent around a bonfire.
-                Before you dive into slumber open your windows and graze the starry night just to find the moon to be closer than ever and if lucky the starry sky.
-                `,
-               //day 2 body
-               `The early bird takes the first bite. The mornings and to precise the sunrises are something to look for. The peaks around Auli are fanatical. You can see “The sleeping beauty” a few Himalayan peaks aligned in a way that looks like a peerless dame sleeping nearby. You can also see Nana Devi peak, Trishul peak, Hathi Parbat, Dungagiri, Beethartoli, Ghori Parat, and Mana Parbat. 
-                This day is full of surprises. After early morning breakfast, we’ll be taking the chair car to Auli top. The chilling weather and a scenic view with a hot cup of coffee is the perfect getaway. We’ll be embarking on an amazing escapade to Gurson Bugyal which is just 3 km ahead. After being back from this incursion we'll have a little rest and a musical night among the stars and then call the night.
-                `,
-               //day 3 body
-               `After a scrumptious breakfast and a heartful of joy, we leave for Delhi. We’ll take the time of our return to experience the breathtaking spots on our journey home. Once we reach Rishikesh we’ll take a little breather and then on the way to Delhi.`,
-               //day 4 body
-               `Reach Delhi in the morning`,
+    //             Driving through national highway 58 you would come across one of the most wondrous places on the face of earth Devprayag.
+    //             Here witness the confluence of the mysticism through the rivers Bhagirathi and Alaknanda transcending into Ganga. 
+    //             This would be the first Prayag out of five (where two rivers meet each other) which you would be witnessing on this route.
+    //             The route is mostly lively until you enter Srinagar where lies the foundation of one of the largest Universities in India. 
+    //             This city also takes pride in one of the biggest dams ever constructed on the river Alaknanda. Next, we would be passing through the bustling streets of Rudraprayag. 
+    //             The second Prayag out of the five where you will witness the convergence of river Mandakini and river Alaknanda. While leaving the city you will witness some breathtaking scenes. 
+    //             Trust me this doesn’t stop here and by the way tea lovers, what good is a tea without the tanginess of pakoras and we have got you covered here as well to take a moment and sink in the flavor of tea, tangy pakoras, and nature.
+    //             Next is Karnprayag the third Prayag out of five where you will witness the confluence of river Pindar and river Alaknanda. Pindar river is blue as the sky, it always leaves me in awe. 
+    //             Next in line is the fourth Prayag, Nandprayag. 
+    //             Here you will witness the convergence of the river Mandakini and river Alaknanda. 
+    //             The town is relatively small but has its delicacies. 
+    //             Through the hustling roads from Chamoli city, we will be crossing Helang. 
+    //             This place has a vibe. Now we will be climbing over the clouds, this place is the elevator of the mountains. From this place, things will start bewildering your mind. 
+    //             The northern wind calls for an adventure junkie. Soaring through these valleys we will take our first stop at Joshimath and then a short ride to Auli. 
+    //             The 11 Km escapade. The key is to get checked in as early as possible. With scrumptious food waiting for you, the nights are gonna be spent around a bonfire.
+    //             Before you dive into slumber open your windows and graze the starry night just to find the moon to be closer than ever and if lucky the starry sky.
+    //             `,
+    //            //day 2 body
+    //            `The early bird takes the first bite. The mornings and to precise the sunrises are something to look for. The peaks around Auli are fanatical. You can see “The sleeping beauty” a few Himalayan peaks aligned in a way that looks like a peerless dame sleeping nearby. You can also see Nana Devi peak, Trishul peak, Hathi Parbat, Dungagiri, Beethartoli, Ghori Parat, and Mana Parbat. 
+    //             This day is full of surprises. After early morning breakfast, we’ll be taking the chair car to Auli top. The chilling weather and a scenic view with a hot cup of coffee is the perfect getaway. We’ll be embarking on an amazing escapade to Gurson Bugyal which is just 3 km ahead. After being back from this incursion we'll have a little rest and a musical night among the stars and then call the night.
+    //             `,
+    //            //day 3 body
+    //            `After a scrumptious breakfast and a heartful of joy, we leave for Delhi. We’ll take the time of our return to experience the breathtaking spots on our journey home. Once we reach Rishikesh we’ll take a little breather and then on the way to Delhi.`,
+    //            //day 4 body
+    //            `Reach Delhi in the morning`,
               
-             ]
+    //          ]
 
-                },
-      inclusions:[
-                  `Travel by Traveller.`,
-                  'Stay available on a double/ triple sharing basis',
-                  'Meals as per Plan ( Day 1:  Dinner; Day 2: Breakfast + Dinner; Day 3: Breakfast;)',
-                  'Sightseeing as per Itinerary',
-                ],
+    //             },
+    //   inclusions:[
+    //               `Travel by Traveller.`,
+    //               'Stay available on a double/ triple sharing basis',
+    //               'Meals as per Plan ( Day 1:  Dinner; Day 2: Breakfast + Dinner; Day 3: Breakfast;)',
+    //               'Sightseeing as per Itinerary',
+    //             ],
               
-      excluded: [
-                  'Anything apart from Inclusions',
-                  'Activities apart from mentioned in the Itinerary',
-                  'Any expenses arising out of unforeseen circumstances (eg. climatic conditions )or any entry fees'
-                ],
+    //   excluded: [
+    //               'Anything apart from Inclusions',
+    //               'Activities apart from mentioned in the Itinerary',
+    //               'Any expenses arising out of unforeseen circumstances (eg. climatic conditions )or any entry fees'
+    //             ],
               
-      TTC:[        //things to carry
-                  'Must Have original Govt. Photo Identity',
+    //   TTC:[        //things to carry
+    //               'Must Have original Govt. Photo Identity',
                   
-                  'Daybag',
+    //               'Daybag',
               
-                  'Sport Shoes (Prefered Trekking Shoes)',
+    //               'Sport Shoes (Prefered Trekking Shoes)',
                   
-                  'A pair of full sleeve shirts/T-shirts and Track Pants',
+    //               'A pair of full sleeve shirts/T-shirts and Track Pants',
                   
-                  'A pair of cotton socks and 2 pairs of woolen socks',
+    //               'A pair of cotton socks and 2 pairs of woolen socks',
                   
-                  '1 full sleeve sweater or fleece jacket (preferable)',
+    //               '1 full sleeve sweater or fleece jacket (preferable)',
                   
-                  'One jacket',
+    //               'One jacket',
                   
-                  'Thermal inners - 1 Pair',
+    //               'Thermal inners - 1 Pair',
                   
-                  '1 pair of gloves',
+    //               '1 pair of gloves',
                   
-                  'Sun cap',
+    //               'Sun cap',
                   
-                  'One scarf',
+    //               'One scarf',
                   
-                  'Light towel',
+    //               'Light towel',
                   
-                  'Lip balm',
+    //               'Lip balm',
                   
-                  'Cold cream and sunscreen (SPF 40+)',
+    //               'Cold cream and sunscreen (SPF 40+)',
                   
-                  'Water bottle 1 lt (At least)',
+    //               'Water bottle 1 lt (At least)',
                   
-                  'Headlamp or torch with fresh pair of batteries',
+    //               'Headlamp or torch with fresh pair of batteries',
                   
-                  'Personal toiletries and toilet paper',
+    //               'Personal toiletries and toilet paper',
                   
-                  'Personal medicine kit',
+    //               'Personal medicine kit',
                   
-                  'Dark sunglasses (U/V protected)',
+    //               'Dark sunglasses (U/V protected)',
                   
-                  'Walking stick (one)'
-                ],
-                //slider pictures
-      slides:[                   
-                  "assets/images/auli/auli-2.jpg",
-                  "assets/images/auli/auli-5.jpg", 
-                  "assets/images/auli/auli-6.jpg", 
-                  "assets/images/auli/auli.jpg",
-                  "assets/images/auli/auli-8.jpg"
-              ],
-      costing:["₹9,999", "₹8,999", "₹7,999"], 
-      occupancy:["Double Occupancy", "Triple Occupancy", "Quad Occupancy"]    
-    },
+    //               'Walking stick (one)'
+    //             ],
+    //             //slider pictures
+    //   slides:[                   
+    //               "assets/images/auli/auli-2.jpg",
+    //               "assets/images/auli/auli-5.jpg", 
+    //               "assets/images/auli/auli-6.jpg", 
+    //               "assets/images/auli/auli.jpg",
+    //               "assets/images/auli/auli-8.jpg"
+    //           ],
+    //   costing:["₹9,999", "₹8,999", "₹7,999"], 
+    //   occupancy:["Double Occupancy", "Triple Occupancy", "Quad Occupancy"]    
+    // },
+
+    // badrinath-dham
     {
       id: 2,
       title:'Badrinath Dham',
@@ -141,6 +144,7 @@ export const TripData: TripClass[]  = [
       pdlocation:'Rishikesh',
       categor: 'Pilgrims',
       mbImg:"background-image: url(assets/images/badrinath/badrinath-mb.jpg);",
+      gmap:"https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d880959.115479846!2d78.36350249302049!3d30.400746180013307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x39093e67cf93f111%3A0xcc78804a6f941bfe!2sRishikesh%2C%20Uttarakhand!3m2!1d30.086928099999998!2d78.2676116!4m5!1s0x39a79cad49e7760f%3A0x9897a724d1bf7174!2sJoshimath%2C%20Uttarakhand!3m2!1d30.550552399999997!2d79.56596329999999!4m5!1s0x39a78e9f973108e7%3A0xf05a8b5e0c71473!2sBadrinath%2C%20Uttarakhand!3m2!1d30.743308499999998!2d79.49376339999999!5e0!3m2!1sen!2sin!4v1617795635256!5m2!1sen!2sin",
       Overview:{
         part1:`Badrinath Dham is dedicated to Lord Vishnu. A sacred deity in Hinduism. The temple is accessible by road and has an operation bust station at an altitude of 3133 meters above sea level. 
               Situated on the banks of the Alaknanda River this place has a lot to offer. From Mana village excursion to the Vasudhara trek makes this place the most sought-after destination. Mystically it’s said that the legendary Pandavas visited this place en route to heaven and this place is no less than heaven. 
@@ -235,6 +239,7 @@ export const TripData: TripClass[]  = [
               costing:["₹11,500", "₹9,999"], 
               occupancy:["Double Occupancy", "Triple Occupancy"]
     },
+    // char-dham
     {
       id: 3,
       title:'Char Dham',
@@ -248,6 +253,7 @@ export const TripData: TripClass[]  = [
       pdlocation:'Delhi',
       categor: 'Pilgrims',
       mbImg:'background-image: url(assets/images/char-dham/chopta-mb.jpg);',
+      gmap:"https://www.google.com/maps/embed?pb=!1m58!1m12!1m3!1d879616.3971418395!2d78.21674796262094!3d30.549260227820746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m43!3e0!4m5!1s0x39093e67cf93f111%3A0xcc78804a6f941bfe!2sRishikesh%2C%20Uttarakhand!3m2!1d30.086928099999998!2d78.2676116!4m5!1s0x3908bbff103db101%3A0x41b1a0ecb9af8513!2sBarkot%2C%20Uttarakhand!3m2!1d30.8096653!2d78.20916129999999!4m5!1s0x3908ed2ff38e31ef%3A0x7fdeebfe93c9add1!2sUttarkashi%2C%20Uttarakhand!3m2!1d30.726830699999997!2d78.4354042!4m5!1s0x390871907388bf55%3A0x67172e0036db57db!2sGangotri%2C%20Uttarakhand!3m2!1d30.994694499999998!2d78.93984019999999!4m5!1s0x3908ed2ff38e31ef%3A0x7fdeebfe93c9add1!2sUttarkashi%2C%20Uttarakhand!3m2!1d30.726830699999997!2d78.4354042!4m5!1s0x390834276aeb1ac7%3A0x3754eb3cb2189aaf!2sGuptkashi%2C%20Uttarakhand!3m2!1d30.5229102!2d79.0777138!4m5!1s0x39a78e9f973108e7%3A0xf05a8b5e0c71473!2sBadrinath%2C%20Uttarakhand!3m2!1d30.743308499999998!2d79.49376339999999!5e0!3m2!1sen!2sin!4v1625939106952!5m2!1sen!2sin",
       Overview:{
         part1:`Also known as Chota Char dham includes “Yamunotri, Gangotri, Kedarnath, and Badrinath. The pilgrimage begins towards Yamunotri Dham. The scenic road leads to the birthplace of the sacred river Yamuna known as Yamunotri Dham. From here we’ll visit the birthplace of the divine river Ganga at Gangotri Dham. From here we’ll travel to Kedar valley to the altars of Lord Shiva at Kedarnath Dham. 
         After the soulful experience at Kedarnath we’ll visit Badrinath Dham under the care of lord Vishnu. The whole valley is full of meadows and scenic spots. It is truly the most enthralling experience which seeps right into the bones themselves.`,
@@ -365,6 +371,7 @@ export const TripData: TripClass[]  = [
       costing:["₹14,499", "₹13,999s"], 
       occupancy:["Double Occupancy", "Triple Occupancy"],
     },
+    // chopta-chandrashills-weekend
     {
       id: 4,
       title:'Chopta Chandrashila Trip',
@@ -378,6 +385,7 @@ export const TripData: TripClass[]  = [
       pdlocation:'Delhi',
       categor: 'Weekend Getaway Trips',
       mbImg:"background-image: url(assets/images/uk-backpacking/banner/chopta-mb.jpg);",
+      gmap:"https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1778440.0870114472!2d76.95582310843818!3d29.472146386013527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!3m2!1d28.7040592!2d77.10249019999999!4m5!1s0x3909ca22d9ac7423%3A0x7f7643a43eb55580!2sChopta%2C%20Uttarakhand!3m2!1d30.3461908!2d79.0485059!5e0!3m2!1sen!2sin!4v1625925436328!5m2!1sen!2sin",
       Overview:{
         part1:`The Journey just begins on the trail to Deoriatal. Laying in the epiphanies of Chaukhamba and Kedar peak Deoriatal leaves you nothing but the sheer experience of soulful bliss. The adventure begins through the rhododendron meadows and the alpine forest in Chopta to Tungnath and Chandrashila. Located at an altitude of 3470 meters, the Tungnath temple is one of the highest Shiva temples. The magnificence of the Himalayas can be experienced atop Chandrashilla. It is truly the most enthralling experience which seeps right into the bones themselves. This hidden jewel offers 360 degrees of Himalayan panorama, it makes it the perfect getaway`,
         part2:null, 
@@ -487,6 +495,7 @@ export const TripData: TripClass[]  = [
       pdlocation:'Dehradun',
       categor: 'Treks',
       mbImg:'background-image: url(assets/images/uk-backpacking/banner/chopta-mb.jpg);',
+      gmap:"https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d439130.112030177!2d77.70676060007023!3d30.698603302287726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x390929c356c888af%3A0x4c3562c032518799!2sDehradun%2C%20Uttarakhand!3m2!1d30.316494499999997!2d78.03219179999999!4m5!1s0x3908a75bf2352605%3A0x1c29c5e50d0fb4c0!2sSankri%2C%20Uttarakhand!3m2!1d31.078120199999997!2d78.1842303!5e0!3m2!1sen!2sin!4v1625926889786!5m2!1sen!2sin",
       Overview:{
         part1:`This hidden jewel is one of the most beautiful treks in the upper Himalayas which takes us to some thrilling places. The trek has a moderate climb through the dense alpine forest meadows. 
         The night under the starry sky is a heavenly feeling. Under nice weather you may check out the whole Har Ki Dun valley. The route is full of a waterfall and scenic meadows. We’ll cover Jaundhar Glacier and Maninda Tal. 
@@ -608,6 +617,7 @@ export const TripData: TripClass[]  = [
       pdlocation:'Delhi',
       categor: 'Weekend Getaway Trips',
       mbImg:"background-image: url(assets/images/kasol-kheerganga/kheerganga-mb.jpg);",
+      gmap:"https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d216649.07945218697!2d77.1874608904877!3d31.957047796810773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0x3904f77fdf8b3de9%3A0xb7df54cbf3ecadae!2sBhuntar%2C%20Himachal%20Pradesh!3m2!1d31.8862368!2d77.1454911!4m5!1s0x39045c4474aa31e9%3A0xf112d2e32b47949d!2sKasol%2C%20Himachal%20Pradesh!3m2!1d32.009998599999996!2d77.3149625!4m5!1s0x390447cd5a3ae36b%3A0x566fae1d5e5f7c6d!2sKheerganga%20Trek%2C%20Khir%20Ganga%2C%20Himachal%20Pradesh!3m2!1d31.993043999999998!2d77.5096226!4m5!1s0x39048b1638306025%3A0x3639d01886da715b!2sManikaran%20Gurdwara%2C%20Gurudwara%20Path%2C%20Manikaran%2C%20Himachal%20Pradesh!3m2!1d32.027036599999995!2d77.3449852!5e0!3m2!1sen!2sin!4v1617794535416!5m2!1sen!2sin",
       Overview:{
         part1:`On the banks of river Parvati, Kasol has made a unique picture on the map. This place offers a unique mix of food and culture. From here you can break a leg to Chalal, Malana, and Waichin. The roaring of the Parvati river, the gust of Himalayan wind, and long trails between the alpine forests fill you with its sheer appreciation. The nights are mostly musical and around a bonfire.`,
         part2:`Kheerganga is one of the most suggested destinations to visit for its hot water spring. Situated in between the Parvati valley this place leaves a soulful experience. The trek is mild and goes via the beautiful pinecone forests. It is said that Goddess Parvati once cooked kheer for her eldest son Kartikay. And since then the hot water spring sprouts till date.`,  
@@ -717,6 +727,7 @@ export const TripData: TripClass[]  = [
       pdlocation:'Delhi',
       categor: 'Backpacking Trips',
       mbImg:"background-image: url(assets/images/uk-backpacking/banner/chopta-mb.jpg);",
+      gmap:"https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d432588.94162084756!2d77.0309065547026!3d32.1070648595143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0x39048708163fd03f%3A0x8129a80ebe5076cd!2sManali%2C%20Himachal%20Pradesh!3m2!1d32.2431872!2d77.1891761!4m5!1s0x3904873b67f51935%3A0x711b3f450dfe5abf!2sSolang%20Valley%2C%20Burwa%2C%20Himachal%20Pradesh!3m2!1d32.3174354!2d77.153516!4m5!1s0x39045c4474aa31e9%3A0xf112d2e32b47949d!2sKasol%2C%20Himachal%20Pradesh!3m2!1d32.009998599999996!2d77.3149625!4m5!1s0x390447cd5a3ae36b%3A0x566fae1d5e5f7c6d!2sKheerganga%20Trek%2C%20Khir%20Ganga%2C%20Himachal%20Pradesh!3m2!1d31.993043999999998!2d77.5096226!5e0!3m2!1sen!2sin!4v1617794253553!5m2!1sen!2sin",
       Overview:{
         part1:`On the banks of river Parvati, Kasol has made a unique picture on the map. This place offers a unique mix of food and culture. From here you can break a leg to Chalal, Malana, and Waichin. The roaring of the Parvati river, the gust of Himalayan wind, and long trails between the alpine forests fill you with its sheer appreciation. The nights are mostly musical and around a bonfire.`,
         part2:`This makes it a perfect getaway for the most cherished Himachal experience. The trip takes you to places like Manikaran and Tosh with a unique flavor of culture and its diversity.`,  
@@ -839,6 +850,7 @@ export const TripData: TripClass[]  = [
       pdlocation:'Rishikesh',
       categor: 'Pilgrims',
       mbImg:"background-image: url(assets/images/kedarnath-badrinath/kedar-badri-mb.jpg);",
+      gmap:"https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d440480.8536385732!2d78.64214406453415!3d30.400458874936316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x39093e67cf93f111%3A0xcc78804a6f941bfe!2sRishikesh%2C%20Uttarakhand!3m2!1d30.086928099999998!2d78.2676116!4m5!1s0x390834276aeb1ac7%3A0x3754eb3cb2189aaf!2sGuptkashi%2C%20Uttarakhand!3m2!1d30.5229102!2d79.0777138!4m5!1s0x39a78e9f973108e7%3A0xf05a8b5e0c71473!2sBadrinath%2C%20Uttarakhand!3m2!1d30.743308499999998!2d79.49376339999999!5e0!3m2!1sen!2sin!4v1625939267739!5m2!1sen!2sin",
       Overview:{
         part1:`Kedarnath Dham is dedicated to Lord Shiva. The most sacred deity in Hinduism.Through the dense forest, the trail takes you through the banks of the Mandakini river. The route is full of a scenic experience and waterfalls. 
               This moderate hike is tiring as the temple is situated at an altitude of 3583 meters.`,
@@ -963,6 +975,7 @@ export const TripData: TripClass[]  = [
       pdlocation:'Dehradun',
       categor: 'Treks',
       mbImg:"background-image: url(assets/images/kedarkantha/kedarkantha-mb.jpg);",
+      gmap:"https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d878254.3066999273!2d77.51999157902732!3d30.69925349035397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e2!4m5!1s0x390929c356c888af%3A0x4c3562c032518799!2sDehradun%2C%20Uttarakhand!3m2!1d30.316494499999997!2d78.03219179999999!4m5!1s0x3908a75bf2352605%3A0x1c29c5e50d0fb4c0!2sSankri%2C%20Uttarakhand!3m2!1d31.078120199999997!2d78.1842303!4m5!1s0x3908a6ef73efd40f%3A0xc71682efaa902ede!2sKedarkantha%2C%20Singtur%20Range%2C%20Uttarakhand!3m2!1d31.024276699999998!2d78.1707374!5e0!3m2!1sen!2sin!4v1617795788126!5m2!1sen!2sin",
       Overview:{
         part1:`The route to Kedarkantha is one of the most scenic experiences. The trek starts from Sankari a small village serving as the base camp. The trek takes you through the dense alpine forests. The route is mesmerizing especially for winters and hence making it the most sought-after winter destination. The Kedarkantha summit is advisable to be done in the morning as the walk under the starry night makes it the most soulful experience. At the Kedarkantha summit, the sun rays dance on the snow. This experience is the most overwhelming. This is mid trek is the most recommended retreat.`,
         part2:null, 
@@ -1076,6 +1089,7 @@ export const TripData: TripClass[]  = [
       pdlocation:'Rishikesh',
       categor: 'Pilgrims',
       mbImg:"background-image: url(assets/images/kedarnath/kedarnath-mb.jpg);",
+      gmap:"https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d440496.398252639!2d78.3983298386171!3d30.397012390457956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e2!4m5!1s0x39093e67cf93f111%3A0xcc78804a6f941bfe!2sRishikesh%2C%20Uttarakhand!3m2!1d30.086928099999998!2d78.2676116!4m5!1s0x390834276aeb1ac7%3A0x3754eb3cb2189aaf!2sGuptkashi%2C%20Uttarakhand!3m2!1d30.5229102!2d79.0777138!4m5!1s0x3908387bb2752eb9%3A0x75c07da69a8f6ff4!2sGaurikund%2C%20Uttarakhand!3m2!1d30.652912999999998!2d79.0256581!4m5!1s0x39083ee08aa6b0b5%3A0xdbbdae8b9602ee02!2sKedarnath%20Temple%2C%20Kedarnath%2C%20Uttarakhand!3m2!1d30.7352308!2d79.066895!5e0!3m2!1sen!2sin!4v1617795533013!5m2!1sen!2sin",
       Overview:{
         part1:`Kedarnath Dham is dedicated to Lord Shiva. The most sacred deity in Hinduism. The temple is not directly accessible by road and has to be reached by 22 kilometers (14 mi) uphill trek from Gaurikund. Through the dense forest, the trail takes you through the banks of the Mandakini river. The route is full of a scenic experience and waterfalls. This moderate hike is tiring as the temple is situated at an altitude of 3583 meters. The head priest (Raval) of the Kedarnath temple belongs to the Veerashaiva community from Karnataka. However, unlike in the Badrinath temple, the Raval of Kedarnath temple does not perform the pujas. The pujas are carried out by Raval's assistants on his instructions.`,
         part2:`After the long hike, this trek provides a soulful experience and hence is the most sought-after destination. The tour is only available in the summers`,  
@@ -1197,6 +1211,7 @@ export const TripData: TripClass[]  = [
       pdlocation:'Delhi',
       categor: 'Backpacking Trips',
       mbImg:"background-image: url(assets/images/kinnaur-valley/kinnaur-mb-1.jpg);",
+      gmap:"https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d436231.5362270405!2d77.5248555460158!3d31.329747064951178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x390578e3e35d6e67%3A0x1f7e7ff6ff9f54b7!2sShimla%2C%20Himachal%20Pradesh!3m2!1d31.1048145!2d77.17340329999999!4m5!1s0x39066a2a311bb81d%3A0x60fde22c129d5588!2sKalpa%2C%20Himachal%20Pradesh!3m2!1d31.538999699999998!2d78.2518863!4m5!1s0x39063a348d7e8a7d%3A0x94117ad4b7290d88!2sChitkul%2C%20Himachal%20Pradesh!3m2!1d31.3507872!2d78.4366266!5e0!3m2!1sen!2sin!4v1617794060722!5m2!1sen!2sin",
       Overview:{
         part1:`Also known for the Kinnaur Kailash this hidden jewel offers a variety of scenic landscapes.
         River Baspa flows through the hilly regions of Kinnaur Valley. The valley enjoys a temperate climate due to high alleviation. The tour takes you through Shimla, Kalpa and Chitkul. The local cuisines are the catch. 
@@ -1317,6 +1332,7 @@ export const TripData: TripClass[]  = [
       pdlocation:'Delhi',
       categor: 'Backpacking Trips',
       mbImg:"background-image: url(assets/images/manali-kasol-tirthan/jibhi-mb-1.jpg);",
+      gmap:"https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d866876.7849526952!2d76.68749065772575!3d31.927310327202306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e0!4m5!1s0x39048708163fd03f%3A0x8129a80ebe5076cd!2sManali%2C%20Himachal%20Pradesh!3m2!1d32.2431872!2d77.1891761!4m5!1s0x3904873b67f51935%3A0x711b3f450dfe5abf!2sSolang%20Valley%2C%20Burwa%2C%20Himachal%20Pradesh!3m2!1d32.3174354!2d77.153516!4m5!1s0x39045c4474aa31e9%3A0xf112d2e32b47949d!2sKasol%2C%20Himachal%20Pradesh!3m2!1d32.009998599999996!2d77.3149625!4m5!1s0x3905ae4a9cf8d53f%3A0xaca987e70a4fab56!2sJibhi%2C%20Himachal%20Pradesh!3m2!1d31.5901322!2d77.35397739999999!4m5!1s0x3905a551808a32ab%3A0xd2dca291d1fca0e8!2sJalori%20Pass%2C%20Jalori%2C%20Sajwar%2C%20Himachal%20Pradesh!3m2!1d31.5372345!2d77.3730094!5e0!3m2!1sen!2sin!4v1617794826379!5m2!1sen!2sin",
       Overview:{
         part1:`Situated on the banks of the Beas river, Manali overs exquisite experiences such as Hidimba Temple, Manu Temple, and Vashisth temple. The day ends at Solang valley.`,
         part2:`On the banks of river Parvati, Kasol has made a unique picture on the map. This place offers a unique mix of food and culture. From here you can break a leg to Chalal, Malana, and Waichin. The roaring of the Parvati river, the gust of Himalayan wind, and long trails between the alpine forests fill you with its sheer appreciation. The nights are mostly musical and around a bonfire.`,  
@@ -1421,113 +1437,114 @@ export const TripData: TripClass[]  = [
       occupancy:["Double Occupancy", "Triple Occupancy"]
     },
     //Nag tibba
-    {
-      id: 13,
-      title:'Nagtibba Trek',
-      route:'nag-tibba',
-      subtitle:'Trek',
-      avail:'All Year',
-      Travel:'Travel Included',
-      poster:"assets/images/uk-backpacking/slider/chopta.jpg",
-      duration:'2D-1N',
-      price:'4999',
-      pdlocation:'Dehradun',
-      categor: 'Treks',
-      mbImg:"background-image: url(assets/images/nag-tibba/nag-tibba-mb.jpg);",
-      Overview:{
-        part1:`Nag Tibba is one of the most offbeat destinations offered by the mystic land of Uttarakhand. Located 90km from Dehradun Nag Tibba offers a mild and unique excursion to “Serpent's peak” “Nag tibba”.`,
-        part2:`Marked as the highest peak in the Shivalik range this hidden jewel offers a distinct flora and fauna. From the peak, you may witness Bandarpoonch Peak, the Gangotri Peaks, Kedarnath Peak, Changabang Peaks, and the Doon Valley.`,  
-        part3:`A 7 km long trail to the Nag Tibba top at an altitude of 3022 meters is cherished by adventurers. The Smell of Deodars, secluded villages, and magnificence of Shivalik ranges is treasured all along the trail. This also makes it a perfect weekend getaway, most preferred for people who are new to the Himalayan Endeavor. `,
-        part4:null,      
-       },
+    // {
+    //   id: 13,
+    //   title:'Nagtibba Trek',
+    //   route:'nag-tibba',
+    //   subtitle:'Trek',
+    //   avail:'All Year',
+    //   Travel:'Travel Included',
+    //   poster:"assets/images/uk-backpacking/slider/chopta.jpg",
+    //   duration:'2D-1N',
+    //   price:'4999',
+    //   pdlocation:'Dehradun',
+    //   categor: 'Treks',
+    //   mbImg:"background-image: url(assets/images/nag-tibba/nag-tibba-mb.jpg);",
+    //   gmap:"https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d220081.17483828927!2d77.83777864819986!3d30.47099858063638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x390929c356c888af%3A0x4c3562c032518799!2sDehradun%2C%20Uttarakhand!3m2!1d30.316494499999997!2d78.03219179999999!4m5!1s0x3908c5a96e3b8283%3A0x32298992620cebd5!2sNag%20Tibba%20Trek%2C%20Nainbag%2C%20Uttarakhand!3m2!1d30.585403999999997!2d78.149787!5e0!3m2!1sen!2sin!4v1617796206679!5m2!1sen!2sin",
+    //   Overview:{
+    //     part1:`Nag Tibba is one of the most offbeat destinations offered by the mystic land of Uttarakhand. Located 90km from Dehradun Nag Tibba offers a mild and unique excursion to “Serpent's peak” “Nag tibba”.`,
+    //     part2:`Marked as the highest peak in the Shivalik range this hidden jewel offers a distinct flora and fauna. From the peak, you may witness Bandarpoonch Peak, the Gangotri Peaks, Kedarnath Peak, Changabang Peaks, and the Doon Valley.`,  
+    //     part3:`A 7 km long trail to the Nag Tibba top at an altitude of 3022 meters is cherished by adventurers. The Smell of Deodars, secluded villages, and magnificence of Shivalik ranges is treasured all along the trail. This also makes it a perfect weekend getaway, most preferred for people who are new to the Himalayan Endeavor. `,
+    //     part4:null,      
+    //    },
 
-      Itinerary:{
-        days:['Day 0:', 'Day 1', 'Day 2:', 'Day 3:',],
-        head:['Departure from Delhi:',
-              'Pantwari Village:', 
-              'Trek to Nag Tibba Summit',
-              'Early Morning arrival at Delhi:',
-             ],
-        body:[//day 0 body
-              `We’ll be departing from Delhi in the evening. And hence most of the road journey would be covered during the night`,
-              //day 1 body
-               `We’ll be reaching early in the morning at Pantwari Village. After having a quick and hearty breakfast we’ll be trekking to the base camp of Nag Tibba. Here you may relax and loiter around the meadows. Enjoy your evening with a lovely sunset followed by a bonfire. `,
-               //day 2 body
-               `We’ll have an early morning trek to the Nag Tibba Summit. The summit is about a 5 km moderate climb. The view from the summit is astounding. After we trek down you can relax in the serenity and explore around the campsite and thereafter we’ll trek down to the Pantwari village. From here we’ll depart to Delhi.`,                      
-               //day 3 body
-             ]
+    //   Itinerary:{
+    //     days:['Day 0:', 'Day 1', 'Day 2:', 'Day 3:',],
+    //     head:['Departure from Delhi:',
+    //           'Pantwari Village:', 
+    //           'Trek to Nag Tibba Summit',
+    //           'Early Morning arrival at Delhi:',
+    //          ],
+    //     body:[//day 0 body
+    //           `We’ll be departing from Delhi in the evening. And hence most of the road journey would be covered during the night`,
+    //           //day 1 body
+    //            `We’ll be reaching early in the morning at Pantwari Village. After having a quick and hearty breakfast we’ll be trekking to the base camp of Nag Tibba. Here you may relax and loiter around the meadows. Enjoy your evening with a lovely sunset followed by a bonfire. `,
+    //            //day 2 body
+    //            `We’ll have an early morning trek to the Nag Tibba Summit. The summit is about a 5 km moderate climb. The view from the summit is astounding. After we trek down you can relax in the serenity and explore around the campsite and thereafter we’ll trek down to the Pantwari village. From here we’ll depart to Delhi.`,                      
+    //            //day 3 body
+    //          ]
 
-              },
+    //           },
             
-      inclusions:[
-          `tranpotation by traveller`,
-          'Stay available on a double/ triple sharing basis',
-          'Meals as per Plan ( Day 1: dinner ; Day 2: Breakfast + lunch;)',
-          'Sightseeing as per Itinerary',
-              ],
+    //   inclusions:[
+    //       `tranpotation by traveller`,
+    //       'Stay available on a double/ triple sharing basis',
+    //       'Meals as per Plan ( Day 1: dinner ; Day 2: Breakfast + lunch;)',
+    //       'Sightseeing as per Itinerary',
+    //           ],
             
-      excluded: [
-          'Anything apart from Inclusions',
-          'Activities apart from mentioned in the Itinerary',
-          'Any expenses arising out of unforeseen circumstances (eg. climatic conditions )or any entry fees'
-              ],
+    //   excluded: [
+    //       'Anything apart from Inclusions',
+    //       'Activities apart from mentioned in the Itinerary',
+    //       'Any expenses arising out of unforeseen circumstances (eg. climatic conditions )or any entry fees'
+    //           ],
             
-      TTC:[        //things to carry
-          'Must Have original Govt. Photo Identity',
-          'bag pack with rain cover',
+    //   TTC:[        //things to carry
+    //       'Must Have original Govt. Photo Identity',
+    //       'bag pack with rain cover',
 
-          'day bag',
+    //       'day bag',
       
-          'Trekking Shoes (Forclaz 100, 500 recommended)',
+    //       'Trekking Shoes (Forclaz 100, 500 recommended)',
           
-          'A pair of full sleeve shirts/T-shirts',
+    //       'A pair of full sleeve shirts/T-shirts',
           
-          '2 pairs of cotton socks and 1 pairs of woolen socks',
+    //       '2 pairs of cotton socks and 1 pairs of woolen socks',
           
-          '1 full sleeve sweater or fleece jacket (preferable)',
+    //       '1 full sleeve sweater or fleece jacket (preferable)',
           
-          'One jacket',
+    //       'One jacket',
           
-          'Thermal inners - 1 Pair',
+    //       'Thermal inners - 1 Pair',
           
-          '1 pair of gloves',
+    //       '1 pair of gloves',
           
-          'Sun cap',
+    //       'Sun cap',
           
-          'One scarf',
+    //       'One scarf',
           
-          'Light towel',
+    //       'Light towel',
           
-          'Lip balm',
+    //       'Lip balm',
           
-          'Cold cream and sunscreen (SPF 40+)',
+    //       'Cold cream and sunscreen (SPF 40+)',
           
-          'Water bottle 1 lt (At least)',
+    //       'Water bottle 1 lt (At least)',
           
-          'Headlamp or torch with fresh pair of batteries',
+    //       'Headlamp or torch with fresh pair of batteries',
           
-          'Personal toiletries and toilet paper',
+    //       'Personal toiletries and toilet paper',
           
-          'Personal medicine kit',
+    //       'Personal medicine kit',
           
-          'Dark sunglasses (U/V protected)',
+    //       'Dark sunglasses (U/V protected)',
           
-          'Walking stick (one)'
-              ],
-              //slider pictures
-      slides:[ 
-          "assets/images/nag-tibba/nagtibba-gallery-1.jpg", 
-          "assets/images/nag-tibba/nagtibba-gallery-2.jpg",
-          "assets/images/nag-tibba/nagtibba-gallery-3.jpg", 
-          "assets/images/nag-tibba/nagtibba-gallery-4.jpg", 
-          "assets/images/nag-tibba/nagtibba-gallery-5.jpg",
-          "assets/images/nag-tibba/nagtibba-gallery-6.jpg",
-          "assets/images/nag-tibba/nagtibba-7.jpg"
+    //       'Walking stick (one)'
+    //           ],
+    //           //slider pictures
+    //   slides:[ 
+    //       "assets/images/nag-tibba/nagtibba-gallery-1.jpg", 
+    //       "assets/images/nag-tibba/nagtibba-gallery-2.jpg",
+    //       "assets/images/nag-tibba/nagtibba-gallery-3.jpg", 
+    //       "assets/images/nag-tibba/nagtibba-gallery-4.jpg", 
+    //       "assets/images/nag-tibba/nagtibba-gallery-5.jpg",
+    //       "assets/images/nag-tibba/nagtibba-gallery-6.jpg",
+    //       "assets/images/nag-tibba/nagtibba-7.jpg"
 
-            ],
-      costing:["₹5,999", "₹4,999"], 
-      occupancy:["Double Occupancy", "Triple Occupancy"]
-    },
+    //         ],
+    //   costing:["₹5,999", "₹4,999"], 
+    //   occupancy:["Double Occupancy", "Triple Occupancy"]
+    // },
     //parvati-valley Backpacking
     {
       id: 14,
@@ -1542,6 +1559,7 @@ export const TripData: TripClass[]  = [
       pdlocation:'Delhi',
       categor: 'Backpacking Trips',
       mbImg:"background-image: url(assets/images/parvati-valley-backpacking/pin-parvati-mb.jpg);",
+      gmap:"https://www.google.com/maps/embed?pb=!1m64!1m12!1m3!1d216605.2389516241!2d77.17538552329272!3d31.975628576433284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m49!3e0!4m5!1s0x3904f77fdf8b3de9%3A0xb7df54cbf3ecadae!2sBhuntar%2C%20Himachal%20Pradesh!3m2!1d31.8862368!2d77.1454911!4m5!1s0x39045c4474aa31e9%3A0xf112d2e32b47949d!2sKasol%2C%20Himachal%20Pradesh!3m2!1d32.009998599999996!2d77.3149625!4m5!1s0x39045c4474aa31e9%3A0xf112d2e32b47949d!2sKasol%2C%20Himachal%20Pradesh!3m2!1d32.009998599999996!2d77.3149625!4m5!1s0x39045d744e3af80d%3A0x70df4631b1593152!2sChalal%20village%2C%20Kullu%2C%20Himachal%20Pradesh!3m2!1d32.0287435!2d77.30399899999999!4m5!1s0x39045fa3d902aaeb%3A0xac71db73cde734a3!2sMalana%20village%2C%20Malana%2C%20Himachal%20Pradesh!3m2!1d32.0645929!2d77.2615792!4m5!1s0x390446b3b9821309%3A0x5f565549c5941af9!2sRudranaag%2C%20FRH%2C%20Himachal%20Pradesh!3m2!1d32.001717!2d77.4854768!4m5!1s0x390443eddfced821%3A0xc47a08366223d5c2!2sTosh%2C%20Himachal%20Pradesh!3m2!1d32.0154338!2d77.453704!4m5!1s0x39048b1638306025%3A0x3639d01886da715b!2sManikaran%20Gurdwara%2C%20Gurudwara%20Path%2C%20Manikaran%2C%20Himachal%20Pradesh!3m2!1d32.027036599999995!2d77.3449852!5e0!3m2!1sen!2sin!4v1617795083035!5m2!1sen!2sin",
       Overview:{
         part1:`On the banks of river Parvati, Kasol has made a unique picture on the map. This place offers a unique mix of food and culture. From here you can break a leg to Chalal, Malana, and Waichin. The roaring of the Parvati river, the gust of Himalayan wind, and long trails between the alpine forests fill you with its sheer appreciation. The nights are mostly musical and around a bonfire. `,
         part2:`Kheerganga is one of the most suggested destinations to visit for its hot water spring. Situated in between the Parvati valley this place leaves a soulful experience. The trek is mild and goes via the beautiful pinecone forests. It is said that Goddess Parvati once cooked kheer for her eldest son Kartikay. And since then the hot water spring sprouts till date`,  
@@ -1650,7 +1668,7 @@ export const TripData: TripClass[]  = [
       id: 15,
       title:'Rishikesh Retreat',
       route:'rishikesh-retreat',
-      subtitle:'Retreat',
+      subtitle:'Weekend Getaway',
       avail:'All Year',
       Travel:'Travel Included',
       poster:"assets/images/product/rishikesh-product.jpg",
@@ -1659,6 +1677,7 @@ export const TripData: TripClass[]  = [
       pdlocation:'Delhi',
       categor: 'Weekend Getaway Trips',
       mbImg:"background-image: url(assets/images/rishikesh-retreat/rishikesh-mb.jpg);",
+      gmap:"https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d890250.220608117!2d77.1366523338833!3d29.35447627958444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!3m2!1d28.7040592!2d77.10249019999999!4m5!1s0x39093e67cf93f111%3A0xcc78804a6f941bfe!2sRishikesh%2C%20Uttarakhand!3m2!1d30.086928099999998!2d78.2676116!5e0!3m2!1sen!2sin!4v1625939328157!5m2!1sen!2sin",
       Overview:{
         part1:`Curated with the most enthralling destinations in Kedar Valley. The trip encapsulates adventure, culture, and retreat. 
                 Kanatal is the “Hamlet” of the offbeat destinations. Relaxing near the lake is heartful.`,
@@ -1776,6 +1795,7 @@ We’ll be departing from Delhi in the evening. And hence most of the road journ
       pdlocation:'Delhi',
       categor: 'Weekend Getaway Trips',
       mbImg:"background-image: url(assets/images/tirthan-valley/jibhi-mb-1.jpg);",
+      gmap:"https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d54392.94965840896!2d77.33328658086698!3d31.563705611113345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x3905ae4a9cf8d53f%3A0xaca987e70a4fab56!2sJibhi%2C%20Himachal%20Pradesh!3m2!1d31.5901322!2d77.35397739999999!4m5!1s0x3905afe766e38add%3A0xed02082edfb9da05!2sShoja%2C%20Himachal%20Pradesh!3m2!1d31.567224699999997!2d77.3704849!4m5!1s0x3905a551808a32ab%3A0xd2dca291d1fca0e8!2sJalori%20Pass%2C%20Jalori%2C%20Sajwar%2C%20Himachal%20Pradesh!3m2!1d31.5372345!2d77.3730094!5e0!3m2!1sen!2sin!4v1617795229546!5m2!1sen!2sin",
       Overview:{
         part1:`One of the most offbeat places mapped as an exotic destination. The destination offers authentic village excursion at Jibhi. Through the dense alpine forest, the day breaks at a local waterfall mesmerizing the whole experience.`,
         part2:`The trip takes you to explore more with Shoja, Jalori, and Serolsar Lake. Located at an altitude of 3100 meters Serloskar lake is a major attraction of Tirthan Valley. The pristine lake offers a soulful view of the majestic Himalayas. `,
@@ -1887,6 +1907,7 @@ We’ll be departing from Delhi in the evening. And hence most of the road journ
       pdlocation:'Delhi',
       categor: 'Backpacking Trips',
       mbImg:'background-image: url(assets/images/uk-backpacking/banner/chopta-mb.jpg);',
+      gmap:"https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d440898.47209415335!2d78.63783942262002!3d30.307743167250234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x39093e67cf93f111%3A0xcc78804a6f941bfe!2sRishikesh%2C%20Uttarakhand!3m2!1d30.086928099999998!2d78.2676116!4m5!1s0x39082d0b18f30369%3A0x515da804c989852e!2sChandrashila%2C%20Tungnath%2C%20Uttarakhand!3m2!1d30.486268799999998!2d79.22124529999999!4m5!1s0x39a7834ba59357a3%3A0xf25fbd90c9113298!2sAuli%20Rd%2C%20Uttarakhand%20246443!3m2!1d30.545070499999998!2d79.5570709!5e0!3m2!1sen!2sin!4v1625928848318!5m2!1sen!2sin",
       Overview:{
         part1:`Curated with the most enthralling destinations in Kedar Valley.`,
         part2:`The Journey just begins on the trail to Deoriatal. Laying in the epiphanies of Chaukhamba and Kedar peak Deoriatal leaves you nothing but the sheer experience of soulful bliss. 
@@ -2036,6 +2057,7 @@ We’ll be departing from Delhi in the evening. And hence most of the road journ
       pdlocation:'Rishikesh',
       categor: 'Treks',
       mbImg:"background-image: url(assets/images/valley-of-flowers/valley-mb.jpg);",
+      gmap:"https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d440761.1980360524!2d78.64381003639795!3d30.338247738477072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x39093e67cf93f111%3A0xcc78804a6f941bfe!2sRishikesh%2C%20Uttarakhand!3m2!1d30.086928099999998!2d78.2676116!4m5!1s0x39a79cad49e7760f%3A0x9897a724d1bf7174!2sJoshimath%2C%20Uttarakhand!3m2!1d30.550552399999997!2d79.56596329999999!4m5!1s0x39a79ad368949d77%3A0xd47704a7afc60e7a!2sGovind%20Ghat%2C%20Uttarakhand!3m2!1d30.618548999999998!2d79.56170519999999!5e0!3m2!1sen!2sin!4v1625927277144!5m2!1sen!2sin",
       Overview:{
         part1:`This hidden treasure is known for its vast valley of flowers and with every passing day, this land changes its colors as if nature is changing the carpets in the living area. Located at the core of Nanda Devi Biosphere makes it a must todo trek.`,
         part2:`At an altitude of 14000 ft, this place is home to millions of species of wildflowers such as saxifrages, sediams, lilies, poppy, calendulas, daisies, geranium, zinnia, and petunia. The status of National Park was granted to this valley in 1982 and is also one of the world heritage sites. Life in these parts is endearing as this is also home to some endangered species such as Asiatic Back bear, snow leopard, Blue sheep, Brown Bear, and more.`,  
@@ -2155,6 +2177,7 @@ We’ll be departing from Delhi in the evening. And hence most of the road journ
       pdlocation:'Delhi',
       categor: 'Backpacking Trips',
       mbImg:"background-image: url(assets/images/spiti/spiti-mb.jpg);",
+      gmap:"https://www.google.com/maps/embed?pb=!1m64!1m12!1m3!1d3522303.323582629!2d75.46671118797454!3d30.443206925102594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m49!3e0!4m5!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!3m2!1d28.7040592!2d77.10249019999999!4m5!1s0x390578e3e35d6e67%3A0x1f7e7ff6ff9f54b7!2sShimla%2C%20Himachal%20Pradesh!3m2!1d31.1048145!2d77.17340329999999!4m5!1s0x39066a2a311bb81d%3A0x60fde22c129d5588!2sKalpa%2C%20Himachal%20Pradesh!3m2!1d31.538999699999998!2d78.2518863!4m5!1s0x3906a374a0af9f8b%3A0x6ec85005a1175d47!2sKaza%2C%20Himachal%20Pradesh!3m2!1d32.2275991!2d78.07099029999999!4m5!1s0x390696c20118c4a5%3A0x4f80f1e543295681!2sPin%2C%20Himachal%20Pradesh!3m2!1d32.0976451!2d78.1747413!4m5!1s0x39066a2a311bb81d%3A0x60fde22c129d5588!2sKalpa%2C%20Himachal%20Pradesh!3m2!1d31.538999699999998!2d78.2518863!4m5!1s0x39063a348d7e8a7d%3A0x94117ad4b7290d88!2sChitkul%2C%20Himachal%20Pradesh!3m2!1d31.3507872!2d78.4366266!4m5!1s0x390578e3e35d6e67%3A0x1f7e7ff6ff9f54b7!2sShimla%2C%20Himachal%20Pradesh!3m2!1d31.1048145!2d77.17340329999999!5e0!3m2!1sen!2sin!4v1625929198329!5m2!1sen!2sin",
       Overview:{
         part1:`As the fellow travellers say spiti has three colors blue, brown and white. Enclosed as a cold desert this place offers a soulful experience. The local cuisine is the most recommended activity. The climate here is dry but cold, due to high alleviation the air is this here. The tour takes you through Shimla, Kalpa, Kaza, Hikkim, and many more. 
         The valley offers a rich flora and fauna so keep your heads up for any exotic moments.`,
@@ -2165,7 +2188,7 @@ We’ll be departing from Delhi in the evening. And hence most of the road journ
        },
 
       Itinerary:{
-        days:['Day 0:', 'Day 1', 'Day 2:', 'Day 3:', 'Day 4:', 'Day 5:', 'Day 6:’,’Day 7:','Day 8:'],
+        days:['Day 0:', 'Day 1', 'Day 2:', 'Day 3:', 'Day 4:', 'Day 5:', 'Day 6:','Day 7:','Day 8:'],
         head:['Departure from Delhi:', 
               'Shimla to Kalpa:', 
               'Kalpa to kaza:', 

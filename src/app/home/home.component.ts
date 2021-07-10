@@ -14,19 +14,17 @@ export class HomeComponent implements OnInit {
   catego: TripClass[];
   nCat: TripClass[];
   test: ['Backpacking Trip', 'Weekend Trip', 'Pilgrim', 'Trek'];
+  catPass1:string = "Treks";
+  catPass3: string = "Weekend Getaway Trips";
+  catPass2:string = "Backpacking Trips"
+  
   constructor(
       public catService: CategoryService,
-      private route: ActivatedRoute,
       public router:Router
   ) { }
   
   ngOnInit(): void {
-    this.getCategory()
+
   }
-  // Calling category details from service methods
- 
-  getCategory(): void {
-  this.catego = this.catService.getCategory();
-  this.nCat= this.catego.filter(o => o.categor === 'bike' )
-  }
+
 }

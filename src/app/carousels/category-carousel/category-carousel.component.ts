@@ -39,8 +39,5 @@ export class CategoryCarouselComponent implements OnInit {
              "assets/images/category/trek-poster.jpg"        
             ], //leave this empty  
   };
-  onClick(pass){
-    this.catService.passRoute(pass)
-    console.log(pass)
-  }
+  
 }

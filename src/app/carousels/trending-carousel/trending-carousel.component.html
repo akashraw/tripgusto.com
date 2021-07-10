@@ -14,10 +14,10 @@
             <div class="item" *ngFor="let slide of trending.slides; let i=index">
               <div class="shadows">
                   
-                <a [routerLink]="['/trip', trending.routes[i]]"><img [src]=[slide] alt=""></a>
+                <a [routerLink]="['/trips', trending.routes[i]]"><img [src]=[slide] alt=""></a>
               
               <div class="down-content" >
-                <a [routerLink]="['/trip', trending.routes[i]]"><h4>{{trending.titles[i]}}</h4></a>
+                <a [routerLink]="['/trips', trending.routes[i]]"><h4>{{trending.titles[i]}}</h4></a>
                 <h6>Starting ₹{{trending.price[i]}}</h6>
                 <small>
                      <strong title="Flight included"><i class="fa fa-calendar"></i> Spring</strong> &nbsp;&nbsp;&nbsp;&nbsp;

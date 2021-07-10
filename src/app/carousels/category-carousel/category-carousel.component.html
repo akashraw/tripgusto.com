@@ -10,7 +10,7 @@
             <!-- 1 -->
             <div class="item" *ngFor="let cat of category.routes; let i=index">
               <div class="shadows" >     
-                <a [routerLink]="['/category', cat]" (click)="onClick(category.pass[i])"><img src="{{category.slides[i]}}" alt=""></a>
+                <a [routerLink]="['/category', cat]"><img src="{{category.slides[i]}}" alt=""></a>
                
             </div>
            </div>

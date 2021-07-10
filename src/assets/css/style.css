@@ -89,6 +89,8 @@ a.filled-button:hover {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	display: flex;
+	flex-direction: column;
 }
 
 .page-heading .text-content h4 {
@@ -210,16 +212,16 @@ header {
 	width: 100%;
 	
 	height: max-content;
-	background-color: #0000;
+	background-color: rgba(0, 0, 0, 0);
 	-webkit-transition: all 0.3s ease-in-out 0s;
     -moz-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 	
 }
-header .navbar {
+/* header .navbar {
 	
-}
+} */
 .navbar .navbar-brand h2:hover {
 	color: #f33f3f!important;
 }
@@ -231,9 +233,9 @@ header .navbar {
 .navbar-nav .show>.nav-link {
    color: #f33f3f!important;
 }
-.background-header .navbar {
+/* .background-header .navbar {
 	
-}
+} */
 .background-header {
 	
 	position: fixed;
@@ -315,22 +317,25 @@ header .navbar {
 	background-image: none;
 }
 .navbar .navbar-toggler {
-	border-color: #0000;
-	background-color: #0000;	
+	border-color: rgba(204, 11, 11, 0);
+	background-color: rgba(226, 0, 0, 0);	
 	height: 36px;
-	color: ivory;
 	outline: none;
 	border-radius: 0px;
 	position: absolute;
 	right: 30px;
 	top: 20px;
+	font-family: 'FontAwesome'
 }
 .navbar .navbar-toggler-icon:after {
 	content: '\f0c9';
 	color: #f33f3f;
 	font-size: 18px;
 	line-height: 26px;
-	
+	font-family: 'FontAwesome'	
+}
+.navbar .navbar-toggler-icon:after :active{
+	color: #f33f3f;
 }
 
 
@@ -975,20 +980,24 @@ footer .inner-content p a {
 	border-radius: 0px;
 	margin-bottom: 30px;
 }
-
+#banner-btn.banner-class{
+	position: absolute;
+	bottom: 6em;
+	align-self: center;
+}
 .contact-form textarea:focus {
 	box-shadow: none;
 	border: 1px solid #eee;
 }
 
 .contact-form button.filled-button {
-	background-color: #f33f3f;
+	background-color: #0053ac;
 	color: #fff;
-	font-size: 14px;
+	font-size: 16px;
 	text-transform: capitalize;
-	font-weight: 300;
+	font-weight: 600;
 	padding: 10px 20px;
-	border-radius: 5px;
+	border-radius: 20px;
 	display: inline-block;
 	transition: all 0.3s;
 	border: none;
@@ -1000,6 +1009,104 @@ footer .inner-content p a {
 	background-color: #121212;
 	color: #fff;
 }
+.contact-form button.filled-buttonW {
+	background-color: #00a383;
+	color: #fff;
+	font-size: 16px;
+	text-transform: capitalize;
+	font-weight: 600;
+	padding: 10px 20px;
+	border-radius: 20px;
+	display: inline-block;
+	transition: all 0.3s;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.contact-form button.filled-buttonW:hover {
+	background-color: #121212;
+	color: #fff;
+}
+
+.contact-form button.filled-buttonBannerGet {
+	background-color: #0053ac;
+	color: #fff;
+	font-size: 16px;
+	text-transform: capitalize;
+	font-weight: 600;
+	padding: 10px 20px;
+	border-radius: 20px;
+	display: inline-block;
+	transition: all 0.3s;
+	border: none;
+	outline: none;
+	width: 200px;
+	cursor: pointer;
+}
+
+.contact-form button.filled-buttonBannerGet:hover {
+	background-color: #121212;
+	color: #fff;
+}
+.contact-form button.filled-buttonWhats {
+	background-color: #00a383;
+	color: #fff;
+	font-size: 16px;
+	text-transform: capitalize;
+	font-weight: 600;
+	padding: 10px 20px;
+	border-radius: 20px;
+	display: inline-block;
+	transition: all 0.3s;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	width: 200px;
+}
+
+.contact-form button.filled-buttonWhats:hover {
+	background-color: #121212;
+	color: #fff;
+}
+.contact-form button.filled-buttonModalSubmit {
+	background-color: #009879;
+	color: #fff;
+	font-size: 16px;
+	text-transform: capitalize;
+	font-weight: 600;
+	padding: 10px 20px;
+	border-radius: 20px;
+	display: inline-block;
+	transition: all 0.3s;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+ .contact-form button.filled-buttonModalSubmit:hover {
+	background-color: #121212;
+	color: #fff;
+}
+
+.contact-form button.filled-buttonCancel {
+	background-color: #b30000;
+	color: #fff;
+	font-size: 16px;
+	text-transform: capitalize;
+	font-weight: 600;
+	padding: 10px 20px;
+	border-radius: 20px;
+	display: inline-block;
+	transition: all 0.3s;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+ .contact-form button.filled-buttonCancel:hover {
+	background-color: #121212;
+	color: #fff;
+}
+
 
 .accordion {
 	margin-left: 30px;
@@ -1053,6 +1160,142 @@ footer .inner-content p a {
 
 
 /* Responsive Style */
+@media (max-width: 390px) {
+
+	#banner-btn.banner-class{position: absolute;
+		bottom: 2em;
+		align-self: center;
+	}
+	.contact-form button.filled-buttonBannerGet {
+		background-color: #0053ac;
+		color: #fff;
+		font-size: 10px;
+		text-transform: capitalize;
+		font-weight: 600;
+		padding: 10px 20px;
+		border-radius: 20px;
+		display: inline-block;
+		transition: all 0.3s;
+		border: none;
+		outline: none;
+		width: 100px;
+		cursor: pointer;
+		
+	}
+	
+	.contact-form button.filled-buttonBannerGet:hover {
+		background-color: #121212;
+		color: #fff;
+	}
+	.contact-form button.filled-buttonWhats {
+		background-color: #00a383;
+		color: #fff;
+		font-size: 10px;
+		text-transform: capitalize;
+		font-weight: 600;
+		padding: 10px 20px;
+		border-radius: 20px;
+		display: inline-block;
+		transition: all 0.3s;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		width: 100px;
+	}
+	
+	.contact-form button.filled-buttonWhats:hover {
+		background-color: #121212;
+		color: #fff;
+	}
+
+
+	.map-responsive{
+
+		overflow:hidden;
+	
+		padding-bottom:56.25%;
+	
+		position:relative;
+	
+		height:0;
+	
+	}
+	
+	.map-responsive iframe{
+	
+		left:0;
+	
+		top:0;
+	
+		height:100%;
+	
+		width:100%;
+	
+		position:absolute;
+	
+	}
+	.banner .text-content {
+		width: 90%;
+		margin-left: 5%;
+	}
+	.banner .text-content h4 {
+		font-size: small;
+	}
+
+	.banner .text-content h2 {
+		font-size: medium;
+		letter-spacing: 0.5px;
+	}
+	.banner-item-01,
+	.banner-item-02,
+	.banner-item-03 {
+		padding: 180px 0px;
+	}
+	.page-heading .text-content h4 {
+		font-size: 22px;
+	}
+
+	.page-heading .text-content h2 {
+		font-size: 36px;
+		letter-spacing: 0.5px;
+	}
+	.section-heading a {
+		float: none;
+		margin-top: 0px;
+		display: block;
+		margin-bottom: 20px;
+	}
+	.product-item .down-content h4 {
+		margin-bottom: 20px!important;
+	}
+	.best-features .left-content {
+		margin-bottom: 30px;
+	}
+	.call-to-action .inner-content {
+		text-align: center;
+	}
+	.call-to-action .inner-content .filled-button {
+		text-align: center;
+		width: 100%;
+		margin-top: 20px;
+	}
+	.about-features img {
+		margin-bottom: 30px;
+	}
+	.service-item {
+		margin-bottom: 30px;
+	}
+	.find-us #map {
+		margin-bottom: 30px;
+	}
+	.find-us .left-content {
+		margin-left: 0px;
+	}
+	.send-message .accordion {
+		margin-top: 30px;
+		margin-left: 0px;
+	}
+}
 @media (max-width: 1080px) {
 	.banner .text-content h4 {
 		font-size: medium;
@@ -1089,7 +1332,94 @@ footer .inner-content p a {
 	}
 }
 @media (max-width: 768px) {
+
+
+	/* .contact-form button.filled-buttonBannerGet {
+		background-color: #0053ac;
+		color: #fff;
+		font-size: 16px;
+		text-transform: capitalize;
+		font-weight: 600;
+		padding: 10px 20px;
+		border-radius: 20px;
+		display: inline-block;
+		transition: all 0.3s;
+		border: none;
+		outline: none;
+		width: 150px;
+		cursor: pointer;
+	}
 	
+	.contact-form button.filled-buttonBannerGet:hover {
+		background-color: #121212;
+		color: #fff;
+	}
+	.contact-form button.filled-buttonWhats {
+		background-color: #00a383;
+		color: #fff;
+		font-size: 16px;
+		text-transform: capitalize;
+		font-weight: 600;
+		padding: 10px 20px;
+		border-radius: 20px;
+		display: inline-block;
+		transition: all 0.3s;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		width: 150px;
+	}
+	
+	.contact-form button.filled-buttonWhats:hover {
+		background-color: #121212;
+		color: #fff;
+	} */
+
+	#banner-btn.banner-class{position: absolute;
+		bottom: 3em;
+		align-self: center;
+	}
+	.contact-form button.filled-buttonBannerGet {
+		background-color: #0053ac;
+		color: #fff;
+		font-size: 12px;
+		text-transform: capitalize;
+		font-weight: 600;
+		padding: 10px 20px;
+		border-radius: 20px;
+		display: inline-block;
+		transition: all 0.3s;
+		border: none;
+		outline: none;
+		width: 150px;
+		cursor: pointer;
+		
+	}
+	
+	.contact-form button.filled-buttonBannerGet:hover {
+		background-color: #121212;
+		color: #fff;
+	}
+	.contact-form button.filled-buttonWhats {
+		background-color: #00a383;
+		color: #fff;
+		font-size: 12px;
+		text-transform: capitalize;
+		font-weight: 600;
+		padding: 10px 20px;
+		border-radius: 20px;
+		display: inline-block;
+		transition: all 0.3s;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		width: 150px;
+	}
+	
+	.contact-form button.filled-buttonWhats:hover {
+		background-color: #121212;
+		color: #fff;
+	}
 	.map-responsive{
 
 		overflow:hidden;
