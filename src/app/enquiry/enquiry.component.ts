@@ -1,12 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { ApiService } from '../api.service';
 import { CData } from '../customer';
+
 @Component({
   selector: 'app-enquiry',
   templateUrl: './enquiry.component.html',
   styleUrls: ['./enquiry.component.css']
 })
 export class EnquiryComponent implements OnInit {
+ 
   
   query: CData[];
 	Cquery: CData = { id : null , name: null, phone: null, email: null,
@@ -14,8 +16,6 @@ export class EnquiryComponent implements OnInit {
 	constructor(private apiService: ApiService) {}
 
   ngOnInit(){	}
-
-
   createQuery(form){
 		form.value.id = this.Cquery.id;
 		form.value.name = this.Cquery.name;
@@ -31,8 +31,8 @@ export class EnquiryComponent implements OnInit {
 			console.log("Product created, ", query);
 			
 		});
+    
+  }
 	
 }
 
-
-}

@@ -1805,7 +1805,7 @@ We’ll be departing from Delhi in the evening. And hence most of the road journ
        },
 
       Itinerary:{
-        days:['Day 0:', 'Day 1:', 'Day 2:', 'Day 3:', 'Day 4:'],
+        days:['Day 0:', 'Day 1:', 'Day 2:', 'Day 3:'],
         head:['Departure from Delhi:', 
               'Arrival Jibhi :', 
               'Excursion to Serolsar lake and Jalori pass.', 
@@ -2188,7 +2188,7 @@ We’ll be departing from Delhi in the evening. And hence most of the road journ
        },
 
       Itinerary:{
-        days:['Day 0:', 'Day 1:', 'Day 2:', 'Day 3:', 'Day 4:', 'Day 5:', 'Day 6:','Day 7:','Day 8:'],
+        days:['Day 0:', 'Day 1:', 'Day 2:', 'Day 3:', 'Day 4:', 'Day 5:', 'Day 6:','Day 7:'],
         head:['Departure from Delhi:', 
               'Shimla to Kalpa:', 
               'Kalpa to kaza:', 

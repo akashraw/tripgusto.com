@@ -6,9 +6,9 @@ header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Ac
 header("Content-Type: application/json; charset=UTF-8");
 
 define('HOST', 'localhost');
-define('USER', 'root');
-define('PASS', '');
-define('NAME', 'first try');
+define('USER', 'u854303816_shraw');
+define('PASS', 'Akashrawat1997');
+define('NAME', 'u854303816_tgDatabase');
 
 $db = new mysqli(HOST ,USER ,PASS ,NAME);
 if ($db->connect_errno) {

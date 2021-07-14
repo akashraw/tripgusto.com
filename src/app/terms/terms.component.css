@@ -1,0 +1,68 @@
+.card {
+    background-color: transparent !important;
+    border: none;
+    padding: 0%;
+    margin-bottom: 20px;
+  }
+  .card-header {
+    background-color: transparent !important;
+    border: none;
+    padding: 0%;
+    
+  }
+
+  .card .card-header h3 a{
+    border-radius:0;
+    letter-spacing:.1em;
+    font-weight:400;
+    color:#ff6612;
+    padding:12px 19px 12px 43px;
+    border:1px solid #ff6612;
+    position:relative;
+    cursor:pointer;
+    font-family:"Open Sans",sans-serif;
+    font-size:.9rem;
+    font-weight:400;
+    text-transform:uppercase;
+    color:#242424;
+    -moz-transition:all 0.3s ease-in-out;
+    -o-transition:all 0.3s ease-in-out;
+    -webkit-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out
+   }
+
+  .accordion{
+    width: 90%;
+      margin: 2rem auto;
+  }
+  .card{
+    box-shadow: 0 2px 25px 0 rgba(110,130,209,.18);
+  }
+  .btn-link{
+    width: 100%;
+    height: 60%;
+    color:#000 !important;
+    font-weight: 500 !important;
+    text-align: left !important;
+    text-decoration: none !important;
+  }
+  .card-body{
+    background: #e8eeff;
+  
+  }
+  
+  .btn-link::after{
+    content: '\2212';
+    width: 30px;
+    font-size:21px;
+    text-align:center;
+    border-radius: 5px;
+    right: 15px;
+    top: 11px;
+    position: absolute;
+    background: #e8eeff;
+  }
+  
+  .btn-link.collapsed::after{
+    content: '\002B';
+  }

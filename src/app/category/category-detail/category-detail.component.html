@@ -20,9 +20,9 @@
 
         <div class="col-md-4" *ngFor="let cate of nCat">
          <div class="product-item">
-          <a [routerLink]="['/trip', cate.route]"><img [src]='cate.poster' alt=""></a>
+          <a [routerLink]="['/trips', cate.route]"><img [src]='cate.poster' alt=""></a>
               <div class="down-content" style="text-align: center;">
-                    <a [routerLink]="['/trip', cate.route]"><h4>{{cate.title}}</h4></a>
+                    <a [routerLink]="['/trips', cate.route]"><h4>{{cate.title}}</h4></a>
 
                     <small>
                       <strong title="Cost">Starting at &nbsp;<i class="fas fa-rupee-sign"></i>&nbsp;&nbsp;{{cate.price}}</strong> &nbsp;&nbsp;&nbsp;&nbsp;

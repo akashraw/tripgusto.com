@@ -3,7 +3,6 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { CancellationComponent } from './cancellation/cancellation.component';
 import { NoPageComponent } from './no-page/no-page.component';
 import { TestComponent } from './test/test.component';
-import {MatTabsModule} from '@angular/material/tabs';
 import { BlogsComponent } from './blogs/blogs.component';
 import { TermsComponent } from './terms/terms.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
@@ -11,11 +10,16 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule, Component } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { BlogDetailsComponent } from './blogs/blog-details/blog-details.component';
 import { CategoryDetailComponent } from './category/category-detail/category-detail.component';
 import { TripDetailComponent } from './trip-detail/trip-detail.component';
 
+const routerOptions: ExtraOptions = {
+  scrollPositionRestoration: 'enabled',
+  anchorScrolling: 'enabled',
+  scrollOffset: [0, 64],
+};
 
 const routes: Routes = [
   {
@@ -101,7 +105,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{scrollPositionRestoration:'top', useHash: false})],
+  imports: [RouterModule.forRoot(routes, routerOptions)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

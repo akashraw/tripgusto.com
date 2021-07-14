@@ -23,16 +23,75 @@
 
 
   
-
-
-
+<div class="container" style="transform: none;">
+  <div class="row">
   
-  <div class="products">
+    <div class="col-lg-8 " style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+      <div class="container" style="z-index: 4; margin-bottom: 6rem; 
+        box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12); ">
+
+
+  <div id="trip-detail" class="products">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+  <!--trip carousel with navi thumb end-->
+  
+        <div class="col-md-12">
+          
+          <table style="text-align: center; table-layout: fixed; margin-top: 35px;">
+            <thead id="trip-ico" style="text-align: center;">
+              <tr >
+                
+                <th>
+                  <div><i class="fas fa-rupee-sign" style="font-size:20px; color: #006D77;"></i></div>
+              </th>
+                <th>
+                    <div><i class="far fa-clock" style="font-size:20px; color: #006D77;"></i></div>
+                </th>
+                <th>
+                  
+                    <div><i class="fas fa-map-marker-alt" style="font-size:20px; color: #006D77;"></i></div>
+              
+                </th>
+              </tr>
+          </thead>
+          <tbody id="misc">
+            <tr>
+              <td>
+                <div>Starting at</div>
+              </td>
+              <td>
+                <div>Duration</div>
+              </td>
+              <td>
+                <div>Pick Up &amp; Drop:</div>
+              </td>
+            </tr>
+          </tbody>
+          <tbody id="trip-det">
+            <tr>
+              <td>
+                <div><strong style="font-size:20px; font-weight: bold; color: #006D77;">{{tripVar.price}}</strong></div>
+              </td>
+              <td>
+                <div><strong  style="font-weight: bold; font-size:20px; color: #006D77;">{{tripVar.duration}}</strong></div>
+              </td>
+              <td>
+                <div><strong style="font-weight: bold; font-size:20px; color: #006D77;">{{tripVar.pdlocation}}</strong></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+            <p id="about" >
+              {{tripVar.Overview.part1}} <br><br>        
+              {{tripVar.Overview.part2}} <br><br>   
+              {{tripVar.Overview.part3}} <br><br>   
+              {{tripVar.Overview.part4}}          
+            </p>         
+        </div>
+        <div class="col-md-12">
           <!--trip carousel with navi thumb-->
-          <div class="container-fluid outer">
+          <div class="container-fluid outer" style="box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12); margin-top: 10px; margin-bottom: 20px; padding-bottom: 15px;">
             <div id="big" class="owl-carousel owl-theme">
               <div class="item" *ngFor="let slide of tripVar.slides">
               
@@ -50,84 +109,6 @@
             
             </div>
         </div>
-  <!--trip carousel with navi thumb end-->
-  
-        <div class="col-md-6">
-          <!-- <div class="row" style="text-align: center; margin-bottom: 2rem;">
-            <div  style="text-align: center;">
-              <div><i class="fas fa-rupee-sign" style="font-size:25px"></i></div>
-              <div>Starting at</div>
-              <div><strong style="font-size:25px; font-weight: bold;">{{tripVar.price}}</strong></div>
-            </div>
-  
-            <div  style="text-align: center;">
-              <div><i class="far fa-clock" style="font-size:25px"></i></div>
-              <div>Duration</div>
-              <div><strong  style="font-weight: bold; font-size:25px;">{{tripVar.duration}}</strong></div>
-              
-            </div>
-  
-            <div  style="text-align: center;">
-              <div><i class="fas fa-map-marker-alt" style="font-size:25px"></i></div>
-                <div>Pick Up &amp; Drop:</div>
-                <div><strong style="font-weight: bold; font-size:25px;">{{tripVar.pdlocation}}</strong></div>
-        
-          </div>
-          </div> -->
-          <table style="text-align: center; table-layout: fixed;">
-            <thead>
-              <tr>
-                
-                <th>
-                  <div><i class="fas fa-rupee-sign" style="font-size:25px"></i></div>
-              </th>
-                <th>
-                    <div><i class="far fa-clock" style="font-size:25px"></i></div>
-                </th>
-                <th>
-                  
-                    <div><i class="fas fa-map-marker-alt" style="font-size:25px"></i></div>
-              <!--  <p class="lead">
-                    &nbsp;Starting at &nbsp;<strong style="font-size:25px; font-weight: bold;">₹16,499</strong> <br><br> <i class="far fa-clock" style="font-size:25px"></i>&nbsp;<strong style="font-weight: bold;">{{trip.Length}}</strong> &nbsp;&nbsp; <i class="fas fa-map-marker-alt" style="font-size:25px"></i>&nbsp;Pick Up &amp; Drop: <strong style="font-weight: bold;">Delhi</strong> 
-                  </p>
-                  <br><br>  -->
-                </th>
-              </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <div>Starting at</div>
-              </td>
-              <td>
-                <div>Duration</div>
-              </td>
-              <td>
-                <div>Pick Up &amp; Drop:</div>
-              </td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <td>
-                <div><strong style="font-size:25px; font-weight: bold;">{{tripVar.price}}</strong></div>
-              </td>
-              <td>
-                <div><strong  style="font-weight: bold; font-size:25px;">{{tripVar.duration}}</strong></div>
-              </td>
-              <td>
-                <div><strong style="font-weight: bold; font-size:25px;">{{tripVar.pdlocation}}</strong></div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-            <p style="font-size: medium;">
-              {{tripVar.Overview.part1}} <br><br>        
-              {{tripVar.Overview.part2}} <br><br>   
-              {{tripVar.Overview.part3}} <br><br>   
-              {{tripVar.Overview.part4}} <br><br>         
-            </p>         
-        </div>
       </div>
     </div>
   </div>
@@ -135,44 +116,55 @@
   <!--reveal end-->
   
       <div class="row" style="margin-top: 3rem;">
-             <div class="col-md-12">
-               <div class="container" style="overflow:hidden;">
-                 <!--mat- tab-->
-                <mat-tab-group mat-stretch-tabs class="mat-elevation-z4"animationDuration="200ms" dynamicHeight dynamicWidth >
-                  <!--first tab-->
-                  <mat-tab label="Itinerary"> 
-                    <div class="container">
-                      <div class="section-heading" style="border: 0">
+             
+            <div class="col-md-12 col-sm-12" style="margin-bottom: 2rem; padding-bottom: 20px;">
+              <div class="container" >
+              <div class="tabbed " style=" padding-bottom: 30px;">
+                
+                <ul  class="nav nav-tabs nav-justified" id="myTab" role="tablist" data-background-color="red">
+                   <li class="nav-item active" role="presentation">
+                      <a class="nav-link " id="Itinerary-tab" data-toggle="tab" href="#Itinerary" role="tab" aria-controls="Itinerary" aria-selected="false"><p>Itinerary</p></a>
+                   </li>
+                   <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="Costing-tab" data-toggle="tab" href="#Costing" role="tab" aria-controls="Costing" aria-selected="false"><p>Costing</p></a>
+                 </li>
+                  <li class="nav-item" role="presentation">
+                   <a class="nav-link" id="Other_Info-tab" data-toggle="tab" href="#Other_Info" role="tab" aria-controls="Other_Info" aria-selected="false"><p>Other</p></a>
+                  </li>
+                   
+                   
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content ">
+                   <div class="tab-pane active" id="Itinerary" aria-labelledby="Itinerary-tab">
+                    <div class="section-heading">
                       <h2>Itinerary</h2>
+                        </div> 
+                       <div class="accordion" id="accordionExample">
+                         <div class="card " *ngFor="let tripday of tripVar.Itinerary.days; let i=index;">
+                         
+                            <div class="card-header" data-toggle="collapse" [id]="i" style="padding: .5rem 0">
+                               <h3 class="mb-0 ">
+                                  <button type="button" class="btn btn-link collapsed " 
+                                   data-toggle="collapse" [attr.data-target]="['#'+'a'+ i]" aria-expanded="false" [attr.aria-controls]="'a'+i" >
+                                  {{tripday}} {{tripVar.Itinerary.head[i]}} 
+                                  </button>
+                               </h3>
+                            </div>
+                            <div [id]="'a'+i" class="collapse " [attr.aria-labelledby]="i"  data-parent="#accordionExample">
+                               <div class="card-body">
+                                  <p>{{tripVar.Itinerary.body[i]}}</p>
+                               </div>
+                            </div>
+                         </div>
                       </div>
-                      <!--DYNAMIC list-->
-                      <ul class="list-group list-group-flush">                       
-                         <li class="list-group-item" *ngFor="let trips of tripVar.Itinerary.days; let i=index">
-                            <div class="row">                        
-                                <div class="col-md-2 col-sm-3" >
+
                       
-                                   <p><strong style="font-weight: 600; font-size: large;">{{trips}}</strong></p>
-                      
-                                </div>
-                                <div class="col-md-10 col-sm-9 ">
-                                  <p style="font-weight: 600; font-size: 16px; ">{{tripVar.Itinerary.head[i]}}
-                                    <br><br>
-                                  </p>
-                                  <p style="font-weight: 500; font-size: 16px; ">
-                                    {{tripVar.Itinerary.body[i]}}
-                                  </p>
-                                </div>
-                                
-                              </div>
-                          </li>
-                        </ul>
-                  </div>
-  
-            
-                  </mat-tab>
-                  <!--2 tab-->
-                <mat-tab label="Costing">
-                <div class="row">
+
+
+                   </div>
+                   <div class="tab-pane" id="Costing" role="tabpanel" aria-labelledby="Costing-tab">
+                    <div class="row">
                       <div class="col-md-12 col-lg-12">
                           <div class="container" >
                             <div class="section-heading">
@@ -225,62 +217,30 @@
               
                 </div>
              </div>
-                </mat-tab>
-                <!--3 tab-->
-                <mat-tab label="Book Now">
-                  <app-book-now></app-book-now>
-                </mat-tab>
-                
-               
-                <!--4 tab-->
-                <mat-tab label="Things To Carry">
-                  <div class="container">
-                    <div class="section-heading">
-                          <h2>Things To Carry</h2>
-                    </div>
-                    <mat-list>
-                     <mat-list-item *ngFor="let item of tripVar.TTC">
-                   
-                       <i class="fa fa-circle" style="font-size:6px"></i>
-                       &nbsp;&nbsp;{{ item }}
-                     </mat-list-item>
-                   </mat-list>
-                  </div>
-                  </mat-tab>
-                <!--5 tab-->
-                <mat-tab label="Cancellation Policy">
-                  <div class="container" style="margin-bottom: 3rem;">
-                    <div class="section-heading">
-                          <h2>Cancellation Policy</h2>
-                    </div>
-                    <ul>
-                      <li>
-                        <i class="fas fa-arrow-circle-right"></i> <strong>&nbsp;&nbsp;No refund shall be granted for the initial booking amount. However, </strong>
-                      </li>    
-                      <br>                
-                      <li>
-                       &nbsp;&nbsp;<i class="fas fa-arrow-right" style="font-size:10px"></i> Free Cancellation upto 45 days before the departure date.
-                      </li>
-                      <li>
-                        &nbsp;&nbsp;<i class="fas fa-arrow-right" style="font-size:10px"></i> 50% will be charged of trip cost, 30-44 days.                      
-                      </li>
-                      <li>
-                        &nbsp;&nbsp;<i class="fas fa-arrow-right" style="font-size:10px"></i> 70% will be charged of trip cost, 15-29 days.
-                      </li>
-                      <li>
-                        &nbsp;&nbsp;<i class="fas fa-arrow-right" style="font-size:10px"></i> 100% will be charged of trip cost, 0-14 days.
-                      </li>
-                    </ul>
-                  </div>
-                </mat-tab>
-                </mat-tab-group>
-                 <!--mat tab end-->
-               </div>                                  
+              </div>
+
+                   <div class="tab-pane" id="Other_Info" role="tabpanel" aria-labelledby="Other_Info-tab">
+                    <div class="container" style="margin-bottom: 3rem;">
+                      <div class="section-heading">
+                            <h2>Things To Carry</h2>
+                      </div>
+                      <ul class="fa-ul">
+                        <li *ngFor="let item of tripVar.TTC">
+                          <span class="fa-li" style="font-size: 1em; color: #32667a;"><i class="fas fa-arrow-alt-circle-right"></i></span>{{ item }}
+                         
+                        </li>
+                      </ul>     
+                 </div>
+                   </div>
+                </div>
+             </div>
+            
+
             </div>
       </div>
-  
+      </div>
   <!--map and contact-->
-  <app-enquiry></app-enquiry>  
+  
   
   
    <!--maps-->
@@ -303,8 +263,29 @@
       </div>
     </div>
   </div>
-   
+
+
+</div>
   
+    </div>
+    <div class="col-lg-4"  style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+      <div id="enquire" class="products" [ngClass]="{'stick_element': stick_var, 'stick_element_after': stick_var_after} " >
+        <div class="container" >
+      <app-enquiry ></app-enquiry>  
+        </div>
+      </div>
+  </div>
+  
+</div>
+</div>
+
+
+ 
+
+
+  
+
+   
   <app-footer></app-footer>
     
   <!-- Modal -->
