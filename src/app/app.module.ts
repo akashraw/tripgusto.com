@@ -23,13 +23,15 @@ import { CategoryService } from './category.service';
 import { CategoryCarouselComponent } from './carousels/category-carousel/category-carousel.component';
 import { CategoryDetailComponent } from './category/category-detail/category-detail.component';
 import { TripDetailComponent } from './trip-detail/trip-detail.component';
-import { MatFormField, MatLabel } from '@angular/material/form-field';
+import { MatFormField, MatFormFieldModule, MatLabel } from '@angular/material/form-field';
 import { MatIcon } from '@angular/material/icon';
 import {MatDatepicker, MatDatepickerModule, MatDatepickerToggle} from '@angular/material/datepicker';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { CallBackModalComponent } from './call-back-modal/call-back-modal.component';
 import { MatSelectModule } from '@angular/material/select';
-
+import { MatButtonModule } from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -62,8 +64,11 @@ import { MatSelectModule } from '@angular/material/select';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-  
-    MatCarouselModule.forRoot(),
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
     GtagModule.forRoot({ trackingId: 'UA-194344967-1', trackPageviews: true })
     
   ],

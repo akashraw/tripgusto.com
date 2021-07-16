@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, HostListener } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
 import { CData } from '../customer';
 
@@ -25,14 +25,9 @@ export class EnquiryComponent implements OnInit {
     form.value.date_from = this.Cquery.date_from;
     form.value.date_to = this.Cquery.date_to;
     form.value.message = this.Cquery.message;
-	
-
 		this.apiService.createQuery(form.value).subscribe((query: CData)=>{
 			console.log("Product created, ", query);
-			
 		});
-    
   }
-	
 }
 

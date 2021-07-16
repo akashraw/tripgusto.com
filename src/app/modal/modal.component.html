@@ -1,6 +1,6 @@
 <!-- Modal -->
 <div class="modal fade" id="queryModal" tabindex="-1" role="dialog" aria-labelledby="queryModal" aria-hidden="true" style="border-width: 1px; border-color: #009879;">
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog modal-sm" role="document">
       <div class="modal-content">
         <div class="modal-header" style="background-color: #009879;">
           <h3 class="modal-title" id="queryModal" style="color:aliceblue; font-weight: 600;">Get A Call Back</h3>
@@ -10,7 +10,7 @@
         </div>
         <div class="modal-body">
           <div class="contact-form">
-            <form #queryForm="ngForm" action="/submit_query.php" method="post" id="contact">
+            <form #queryForm="ngForm"  method="POST" (ngSubmit)="createQuery(queryForm); queryForm.reset()" action="https://www.tripgusto.com/backend/Qsubmit.php" id="contact" ngNativeValidate >
               <input type="text" class="form-control" name="name" placeholder="Enter full name" [(ngModel)] ="Cquery.name" required="">
   
               <div class="row">
@@ -52,7 +52,7 @@
                     <div class="col-md-12" id="modal-btn" style="text-align: center;">
                        <fieldset>
                         <!-- <button type="button"   class="filled-buttonCancel" style="width: 120px; font-weight: 500; margin-right: 2rem; " data-dismiss="modal">Cancel</button> -->
-                        <button type="button"  type="submit" id="form-submit" class="filled-buttonModalSubmit" style="width: 180px; font-weight: 500;" (click)="createQuery(queryForm)" value="Send">Get Quote</button>
+                        <button type="button"  type="submit" id="form-submit" class="filled-buttonModalSubmit" style="width: 180px; font-weight: 500;"   value="Send">Get Quote</button>
                        </fieldset>
                     </div>
                 </div>

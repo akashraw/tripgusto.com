@@ -7,18 +7,12 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ApiService {
 
-  PHP_API_SERVER = "http://localhost/backend";
+  PHP_API_SERVER = "https://www.tripgusto.com";
 	constructor(private httpClient: HttpClient) {}
-	// readProducts(): Observable<CData[]>{
-	// 	return this.httpClient.get<CData[]>(`${this.PHP_API_SERVER}/index.php`);
-	// }
 	createQuery(query: CData): Observable<CData>{
-		return this.httpClient.post<CData>(`${this.PHP_API_SERVER}/create.php`, query);
+		return this.httpClient.post<CData>(`${this.PHP_API_SERVER}/backend/create.php`, query);	
 	}
-	// updateProduct(product: CData){
-	// 	return this.httpClient.put<CData>(`${this.PHP_API_SERVER}/update_product.php`, product);
-	// }
-	// deleteProduct(id: number){
-	// 	return this.httpClient.delete<CData>(`${this.PHP_API_SERVER}/delete_product.php/?id=${id}`);
-	// }
+	sendEmail(emailData: CData){
+		 this.httpClient.post(`${this.PHP_API_SERVER}/backend/Qsubmit.php`, emailData);
+	}
 }

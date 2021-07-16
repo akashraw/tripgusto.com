@@ -16,8 +16,10 @@ if(isset($postdata) && !empty($postdata))
     $date_from = $request['date_from'];
     $date_to = $request['date_to'];
     $message = $request['message'];
-	$sql = "INSERT INTO datab (id,name,phone,email,pickup,date_from,date_to,message) 
-            VALUES (null,'$name',$phone,'$email','$pickup','$date_from','$date_to','$message')";
+    date_default_timezone_set('Asia/Kolkata');
+    $queryDate = date('m/d/Y h:i:s a', time());
+	$sql = "INSERT INTO CustomerData (id,name,phone,email,pickup,date_from,date_to,message,queryDate) 
+            VALUES (null,'$name',$phone,'$email','$pickup','$date_from','$date_to','$message','$queryDate')";
 	if($db->query($sql))
 	{
 		http_response_code(201);
@@ -31,7 +33,8 @@ if(isset($postdata) && !empty($postdata))
         'date_to' => $date_to, 
         'message' => $message
         ];
-		echo json_encode($qdata);
+        $true=true;
+		echo json_encode($true);
 	}
 	else
 	{

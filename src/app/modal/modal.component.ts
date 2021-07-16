@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
 import { CData } from '../customer';
@@ -8,11 +9,11 @@ import { CData } from '../customer';
   styleUrls: ['./modal.component.css']
 })
 export class ModalComponent implements OnInit {
-
+  con:boolean;
   query: CData[];
 	Cquery: CData = { id : null , name: null, phone: null, email: null,
                              pickup: null, date_from: null, date_to: null, message: null}
-	constructor(private apiService: ApiService) {}
+	constructor(private apiService: ApiService, private http:HttpClient) {}
 
   ngOnInit(){	}
 
@@ -28,7 +29,6 @@ export class ModalComponent implements OnInit {
     form.value.message = this.Cquery.message;
 		this.apiService.createQuery(form.value).subscribe((query: CData)=>{
 			console.log("Product created, ", query);
-			
-		});
+		})
   }
 }
