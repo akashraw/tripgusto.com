@@ -10,7 +10,7 @@
         </div>
         <div class="modal-body">
           <div class="contact-form">
-            <form #queryForm="ngForm"  method="POST" (ngSubmit)="createQuery(queryForm); queryForm.reset()" action="https://www.tripgusto.com/backend/Qsubmit.php" id="contact" ngNativeValidate >
+            <form #queryForm="ngForm"  method="POST" (ngSubmit)="createQuery(queryForm); queryForm.reset()"  id="contact" ngNativeValidate >
               <input type="text" class="form-control" name="name" placeholder="Enter full name" [(ngModel)] ="Cquery.name" required="">
   
               <div class="row">

@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { PreloaderComponent } from './preloader/preloader.component';
 import { HeaderComponent } from './header/header.component';
-import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { TrendingCarouselComponent } from './carousels/trending-carousel/trending-carousel.component';
 import { WeekendCarouselComponent } from './carousels/weekend-carousel/weekend-carousel.component';
 import { BackpackingCarouselComponent } from './carousels/backpacking-carousel/backpacking-carousel.component';
@@ -32,6 +31,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import { MatNativeDateModule } from '@angular/material/core';
+// import { FACEBOOK_PIXEL_PROVIDER } from './pixel.provider';
 
 @NgModule({
   declarations: [
@@ -41,7 +41,6 @@ import { MatNativeDateModule } from '@angular/material/core';
     FooterComponent,
     PreloaderComponent,  
     HeaderComponent,
-    
     TrendingCarouselComponent,
     WeekendCarouselComponent,
     BackpackingCarouselComponent,
@@ -53,6 +52,7 @@ import { MatNativeDateModule } from '@angular/material/core';
     CategoryDetailComponent,
     TripDetailComponent,
     CallBackModalComponent,
+    
     
     
   ],
@@ -69,7 +69,7 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatButtonModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    GtagModule.forRoot({ trackingId: 'UA-194344967-1', trackPageviews: true })
+    GtagModule.forRoot({ trackingId: 'UA-194344967-1', trackPageviews: true }),
     
   ],
   providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}, Title, TitleService, CategoryService],

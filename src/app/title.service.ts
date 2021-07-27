@@ -9,7 +9,7 @@ import {Gtag} from "angular-gtag";
 
 export class TitleService {
   default_title = 'Trip Gusto';
-  
+  capRoute:string;
 
   constructor(
     private router: Router,
@@ -19,6 +19,7 @@ export class TitleService {
   ) { }
 
   boot() {
+    this.capRoute=this.activeRoute.snapshot.params['TripRoute']
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd),
       map(() => this.activeRoute),
@@ -29,7 +30,7 @@ export class TitleService {
         //here goes the GA reporting code            
 
         this.gtag.pageview({
-          page_title: data && data.title ? data.title : this.default_title,
+          page_title: this.capRoute ? this.capRoute: data && data.title ? data.title : this.default_title,
           page_path: this.router.url,
           page_location: 'www.tripgusto.com/' + this.router.url
         });

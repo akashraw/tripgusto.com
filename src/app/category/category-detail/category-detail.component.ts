@@ -1,22 +1,24 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { CategoryService } from 'src/app/category.service'; 
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TripClass } from 'src/app/TripDataClass';
-
+import { TripService } from 'src/app/trip.service';
+import { Title } from '@angular/platform-browser';
+declare var $:any;
 
 @Component({
   selector: 'app-category-detail',
   templateUrl: './category-detail.component.html',
   styleUrls: ['./category-detail.component.css']
 })
-export class CategoryDetailComponent implements OnInit {
+export class CategoryDetailComponent implements OnInit, AfterViewInit {
   nCat: TripClass[];
   
   capRoutePoster:string;
   capRoute:string;
   constructor(
-      private catService: CategoryService,
+      private catService: TripService,
       private route: ActivatedRoute,
+      private titleService: Title
   ) { }
   
   ngOnInit(): void {
@@ -43,9 +45,34 @@ export class CategoryDetailComponent implements OnInit {
   }
   getCategory(): void {
   
-  this.nCat= this.catService.getCategory().filter(o => o.categor === this.capRoute )
-  
+  this.nCat= this.catService.getTripInfos().filter(o => o.categor === this.capRoute )
+  this.titleService.setTitle(this.capRoute + ` • ` + `TripGusto`);
+}
+ngAfterViewInit(){
+  $('#category-sliders').owlCarousel({    
+    lazyLoad:true,
+    items: 4,
+    loop: true,
+    dots:true,
+    autoplayTimeout: 8500,
+    smartSpeed: 450,
+    responsive: {
+        0: {
+            items: 1
+           },
+       480:{
+           items: 2
+           },
+       768: {
+           items: 3
+           },
+       1170: {
+           items: 4
+           }
+   }
+  });
 }
 
   
 }
+

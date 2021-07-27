@@ -1,13 +1,13 @@
-import { Component, OnInit, Output, EventEmitter} from '@angular/core';
+import { AfterViewInit, Component, OnInit, } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CategoryService } from 'src/app/category.service';
-
+declare var $:any;
 @Component({
   selector: 'app-category-carousel',
   templateUrl: './category-carousel.component.html',
   styleUrls: ['./category-carousel.component.css']
 })
-export class CategoryCarouselComponent implements OnInit {
+export class CategoryCarouselComponent implements OnInit, AfterViewInit{
  
   constructor(
       public catService: CategoryService,
@@ -39,5 +39,28 @@ export class CategoryCarouselComponent implements OnInit {
              "assets/images/category/trek-poster.jpg"        
             ], //leave this empty  
   };
+  ngAfterViewInit(){
+    $('#category-sliders').owlCarousel({    
+      
+    items: 4,
+    loop: true,
+    dots:true,
+    autoplayTimeout: 8500,
+    smartSpeed: 450,
+    responsive: {
+        0: {
+            items: 1
+           },
+       480:{
+           items: 2
+           },
+       768: {
+           items: 3
+           },
+       1170: {
+           items: 4
+           }
+       }
+    });}
   
 }

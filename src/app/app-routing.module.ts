@@ -14,7 +14,8 @@ import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { BlogDetailsComponent } from './blogs/blog-details/blog-details.component';
 import { CategoryDetailComponent } from './category/category-detail/category-detail.component';
 import { TripDetailComponent } from './trip-detail/trip-detail.component';
-
+import { TripData } from './TripData';
+import { TripClass } from './TripDataClass';
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
   anchorScrolling: 'enabled',
@@ -51,11 +52,11 @@ const routes: Routes = [
   },
   //trip detail
   {
-    path:'trips/:TripRoute', component: TripDetailComponent, pathMatch:'full', data:{title: 'Weekend Getaway Trips'}
+    path:'trips/:TripRoute', component: TripDetailComponent, pathMatch:'full'
   },
   //category routes start
   {
-    path:'category/:CatDetailRoute', component: CategoryDetailComponent, pathMatch:'full', data:{title: 'Weekend Getaway Trips'}
+    path:'category/:CatDetailRoute', component: CategoryDetailComponent, pathMatch:'full'
     // children:[
     //   { path:'weekend', component: CategoryDetailComponent, pathMatch:'full', data:{title: 'Weekend Getaway Trips'}},
     //   { path:'backpacking', component: CategoryDetailComponent, pathMatch:'full', data:{title: 'Backpacking Trips'}},

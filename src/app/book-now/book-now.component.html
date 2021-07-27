@@ -7,51 +7,58 @@
               <h2>Book Now</h2>
             </div>
     
-            <div class="contact-form" >
-              <form class="contact-forms" id="contact" #queryForm="ngForm" action="/submit_query.php" method="post">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <fieldset>
-                      <input name="name" type="text" class="form-control" id="name" placeholder="Name" [(ngModel)] ="Cquery.name" required="">
-                    </fieldset>
+            <div class="bg-img">
+              <div class="content">
+                <header>Login Form</header>
+                <form #queryForm="ngForm"  method="POST" (ngSubmit)="createQuery(queryForm); queryForm.reset()"  id="contact" ngNativeValidate >
+                  <div class="field">
+                    <span class="fa fa-user"></span>
+                    <input  type="text" class="form-control" name="name" placeholder="Full Name" [(ngModel)] ="Cquery.name" required="">
                   </div>
-    
-                  <div class="col-sm-6">
-                    <fieldset>
-                      <input name="email" type="text" class="form-control" id="email" placeholder="Email" [(ngModel)] ="Cquery.email" required="">
-                    </fieldset>
+                  <div class="field space">
+                    <span class="fa fa-user"></span>
+                    <input type="text" class="form-control" name="email"  placeholder="Enter email address" [(ngModel)] ="Cquery.email" required="">
                   </div>
-    
-                  <div class="col-sm-6">
-                    <fieldset>
-                      <input name="phone" type="text" class="form-control" id="phone" placeholder="Phone" [(ngModel)] ="Cquery.phone" required="">
-                    </fieldset>
+                  <div class="field space">
+                    <span class="fa fa-lock"></span>
+                    <input type="text" class="form-control" name="phone" placeholder="Enter phone" [(ngModel)] ="Cquery.phone" required="">
                   </div>
-    
-                  <div class="col-sm-3">
-                    <fieldset>
-                      <input name="date1" type="date" class="form-control" id="date1" placeholder="From DD-MM-YY" [(ngModel)] ="Cquery.date_from"  required="">
-                    </fieldset>
+                  <div class="field space">
+                    <i class="fas fa-calendar-day"></i>
+                    <input type="date" class="form-control" name="date_from" placeholder="Pick-up date/time" [(ngModel)] ="Cquery.date_from" required="">
                   </div>
-    
-                  <div class="col-sm-3">
-                    <fieldset>
-                      <input name="date2" type="date" class="form-control" id="date2" placeholder="To DD-MM-YY" [(ngModel)] ="Cquery.date_to" required="">
-                    </fieldset>
+                  <div class="field space">
+                    <span class="fa fa-lock"></span>
+                    <input type="date" class="form-control" name="date_from" placeholder="Pick-up date/time" [(ngModel)] ="Cquery.date_to" required="">
                   </div>
-                  
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Notes" [(ngModel)] ="Cquery.message"  required=""></textarea>
-                    </fieldset>
+                  <div class="field space">
+                    <span class="fa fa-lock"></span>
+                    <input type="text" class="form-control" placeholder="Pick-up location" name="Pick-up location" [(ngModel)] ="Cquery.pickup" required="">
                   </div>
-                  <div class="col-lg-12">
-                    <fieldset  style="text-align: center;">
-                      <button type="submit" id="form-submit" class="filled-button" (click)="createQuery(queryForm)" style="width: 150px;">Get Quote</button>
-                    </fieldset>
+                  <div class="field space">
+                    <span class="fa fa-lock"></span>
+                    <textarea type="text" class="form-control" placeholder="message" name="message" [(ngModel)] ="Cquery.message" required=""></textarea>
+                  </div>      
+                  <div class="pass">
+                    <a href="#">Forgot Password?</a>
+                  </div>
+                  <div class="field">
+                    <input type="submit" value="Submit">
+                  </div>
+                </form>
+                <div class="login">Or login with</div>
+                <div class="links">
+                  <div class="facebook">
+                    <i class="fab fa-facebook-f"><span>Facebook</span></i>
+                  </div>
+                  <div class="instagram">
+                    <i class="fab fa-instagram"><span>Instagram</span></i>
                   </div>
                 </div>
-              </form>
+                <div class="signup">Don't have account?
+                  <a href="#">Signup Now</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

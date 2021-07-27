@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~bootstrap/dist/css/bootstrap.css";
 @import "~assets/css/fontawesome.css";
 @import "~assets/css/owl.carousel.css";
 @import "~assets/css/style.css";
@@ -7,9 +7,88 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 @import "~assets/css/trip.css";
 
+/* carousel category */
+
+
+.trips-slider{
+	margin-bottom: 30px;
+}
+
+.trips-slider .item{
+    background:rgba(255, 255, 255, 0.493);
+    margin:1.4rem;
+	margin-bottom: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+} 
+.trips-slider .shadows p{
+    font-family: inherit;
+    font-size: 17px;
+    line-height: 1.5;
+    margin:0 0 17px 0;
+    font-weight:300;
+}
+.trips-slider .item{
+    text-align: center;
+	overflow: hidden;
+    opacity: 1;
+	width: fit-content;
+}
+
+.trips-slider.owl-carousel .owl-item .shadows a{
+    width: fit-content;
+    
+}
+.trips-slider img{
+	border-radius: 6px;
+	margin-bottom: 6px;
+    background-color: #0000;
+    border: none;
+	max-height: 228px;
+	max-width: 307px;
+    
+}
+
+.trips-slider .item{
+    text-align: center;
+    -webkit-transform: scale3d(0.96,0.96,1);
+    transform: scale3d(0.96,0.96,1);
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+ }
+
+.trips-slider .item:hover {
+    opacity: 1;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+ }
+ 
 
 
 
+
+.trips-slider.item.shadows a{
+	position: relative;
+}
+.trips-slider.down-content{
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inherit;
+}
+.owl-theme .owl-dots .owl-dot {
+    outline: none;
+}
+
+
+
+
+
+
+
+/* testimonial owl */
 #customers-testimonials .owl-item.active.center .item{
    opacity: 1;
    -webkit-transform: scale3d(1,1,1);

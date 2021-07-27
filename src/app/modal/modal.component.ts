@@ -29,6 +29,7 @@ export class ModalComponent implements OnInit {
     form.value.message = this.Cquery.message;
 		this.apiService.createQuery(form.value).subscribe((query: CData)=>{
 			console.log("Product created, ", query);
+      alert("Your Query Has Been Submitted")
 		})
   }
 }

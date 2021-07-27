@@ -6,13 +6,12 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ApiService {
-
+  var: any;
   PHP_API_SERVER = "https://www.tripgusto.com";
 	constructor(private httpClient: HttpClient) {}
 	createQuery(query: CData): Observable<CData>{
-		return this.httpClient.post<CData>(`${this.PHP_API_SERVER}/backend/create.php`, query);	
+		return this.var= this.httpClient.post<CData>(`${this.PHP_API_SERVER}/backend/create.php`, query)
+		   
 	}
-	sendEmail(emailData: CData){
-		 this.httpClient.post(`${this.PHP_API_SERVER}/backend/Qsubmit.php`, emailData);
-	}
+	
 }

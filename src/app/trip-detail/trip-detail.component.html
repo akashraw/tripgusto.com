@@ -251,7 +251,7 @@
           <div class="section-heading">
             <h2>Map and Route</h2>
           </div>
-          <div class= "map-responsive"  style="text-align: center;">
+          <div class= "map-responsive"  style="text-align: center; overflow: hidden;">
            <iframe [src]="urlSafe " width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" ></iframe> 
         </div>
         </div> 
@@ -266,8 +266,10 @@
 
 
 </div>
+<app-book-now></app-book-now>
   
     </div>
+
     <div class="col-lg-4"  style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
       <div id="enquire" class="products" [ngClass]="{'stick_element': stick_var, 'stick_element_after': stick_var_after} " >
         <div class="container" >

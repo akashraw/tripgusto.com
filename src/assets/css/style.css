@@ -6,7 +6,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   
 }
-
+.trips-slider a{
+	font-size: 1.3rem;
+	color:#006D77;
+}
+.trips-slider a:hover{
+	color: #83c5be;
+  }
 p {
 	margin-bottom: 0px;
 	font-size: 14px;
@@ -479,9 +485,10 @@ header {
 .product-item .down-content h4 {
 	text-align: center;
 	font-size: 17px;
-	color: #1a6692;
+	color: #006D77;
 	margin-bottom: 20px;
 }
+
 
 .product-item .down-content h6 {
 	text-align: center;
@@ -1012,7 +1019,7 @@ footer .inner-content p a {
 	border: none;
 	outline: none;
 	cursor: pointer;
-	width: 200px;
+	width: 150px;
 }
 
 .contact-form button.filled-button:hover {
@@ -1130,7 +1137,7 @@ footer .inner-content p a {
 	
 }
 
-.accordion a:hover {
+.accordion button:hover {
 	color: #f33f3f!important;
 }
 
@@ -1498,7 +1505,7 @@ footer .inner-content p a {
 		background-color: transparent !important;
 		border: none;
 		padding: 0%;
-		border:2px solid #006D77;
+		border:2px 2px 2px 3px solid #006D77;
 	  }
 	  
 	  #Itinerary button:hover{

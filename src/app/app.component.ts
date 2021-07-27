@@ -1,14 +1,14 @@
 import { GtagModule, Gtag } from 'angular-gtag';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { filter } from 'rxjs/operators';
 import { map } from 'rxjs/operators';
 import { TitleService } from './/title.service';
 
 declare var $:any;
-
-declare let gtag;
+declare let fbq:Function;
+declare let gtag:Function;
 declare const navEndEvent;
 @Component({
   selector: 'app-root',
@@ -16,7 +16,7 @@ declare const navEndEvent;
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit, AfterViewInit{
   title='analytics';  
 
   
@@ -49,32 +49,48 @@ export class AppComponent implements OnInit{
 {
   this.analTitle.boot();
 }
-
+// router.events.subscribe((y: NavigationEnd) => {
+//   if(y instanceof NavigationEnd){
+//     fbq('track', 'PageView');
+//   }
+// })
 
 
 }
 
        ngOnInit() {
-
-        const navEndEvents = this.router.events.pipe(
-            filter(event => event instanceof NavigationEnd))
-            .pipe( map(() => this.activatedRoute))
-            .subscribe((event) => {
-              $.getScript('assets/js/custom.js');
+        
+        // const navEndEvents = this.router.events.pipe(
+        //     filter(event => event instanceof NavigationEnd))
+        //     .pipe( map(() => this.activatedRoute))
+        //     .subscribe((event) => {
+        //       $.getScript('assets/js/custom.js');
               
-        });
+        // });
        // navEndEvent.subscribe((event: NavigationEnd) =>{
          //   gtag('config', 'UA-194344967-1', {
            //   'page_path': event.urlAfterRedirects
             //});            
         //});
        
-        
+        (window as any).fbq('track', 'PageView');
 
         
   }
         
-    
+    ngAfterViewInit(){
+        $(window).scroll(function() {
+          var scroll = $(window).scrollTop();
+          var box = $('.header-text').height();
+          var header = $('header').height();
+      
+          if (scroll >= box - header) {
+            $("header").addClass("background-header");
+          } else {
+            $("header").removeClass("background-header");
+          }
+          });
+    }
     
       
 }

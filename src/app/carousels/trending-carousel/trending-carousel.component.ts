@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+declare var $:any;
 @Component({
   selector: 'app-trending-carousel',
   templateUrl: './trending-carousel.component.html',
   styleUrls: ['./trending-carousel.component.css']
 })
-export class TrendingCarouselComponent implements OnInit {
+export class TrendingCarouselComponent implements OnInit, AfterViewInit{
 
   constructor() { }
 
@@ -30,5 +30,30 @@ export class TrendingCarouselComponent implements OnInit {
     
     pdlocation: ['Delhi', 'Rishikesh', 'Delhi', 'Delhi', 'Delhi']  //pick and drop location
   };
+  ngAfterViewInit(){
+    $('#slider' ).owlCarousel({
+      lazyLoad:true,
+      arrow:true,
+      items: 5,
+      loop: true,
+      dots:true,
+      autoplayTimeout: 8500,
+      smartSpeed: 450,
+      responsive: {
+          0: {
+              items: 1
+             },
+         480:{
+             items: 2
+             },
+         768: {
+             items: 3
+             },
+         1170: {
+             items: 4
+             }
+     }
+    }); 
+  }
 
 }

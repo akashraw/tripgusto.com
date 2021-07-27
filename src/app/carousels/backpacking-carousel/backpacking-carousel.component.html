@@ -1,5 +1,5 @@
 <!--trending trips-->
-<div class="backpacking-slider" style="margin-bottom: 4em;">
+<div class="trips-slider" style="margin-bottom: 4em;">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
@@ -18,7 +18,7 @@
               <a [routerLink]="['/trips', trips.route]"><img [src]=[trips.poster] alt=""></a>
             
             <div class="down-content" >
-              <a [routerLink]="['/trips', trips.route]"><h4>{{trips.title}}</h4></a>
+              <a [routerLink]="['/trips', trips.route]" ><h4 >{{trips.title}}</h4></a>
               <h6>Starting ₹{{trips.price}}</h6>
               <small style="padding-top:2em ;">
                    <strong title="Flight included"><i class="fa fa-calendar"></i> Spring</strong> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -27,7 +27,8 @@
               </small>
              </div>
             </div>
-           </div>      
+           </div>       
+           
         </div>
       </div>
     </div>
