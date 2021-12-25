@@ -1,0 +1,73 @@
+<form [formGroup]="myForm">
+    <mat-form-field>
+        <input matInput placeholder="Name" formControlName="name">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Email" formControlName="email">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Mobile Number" formControlName="phone">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+             <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+        <textarea matInput placeholder="message" formControlName="message"></textarea>
+    </mat-form-field>
+</form>
+
+<!-- 
+<div class="contact-form">
+    <form class="contact-form" id="contact" #queryForm="ngForm" action="/submit_query.php" method="post" >
+      <div class="row">
+        <div class="col-sm-12">
+          <fieldset>
+            <input name="name" type="text" class="form-control" id="name" placeholder="Name" [(ngModel)] ="Cquery.name" required="">
+          </fieldset>
+        </div>
+
+        <div class="col-sm-12">
+          <fieldset>
+            <input name="email" type="text" class="form-control" id="email" placeholder="Email" [(ngModel)] ="Cquery.email" required="">
+          </fieldset>
+        </div>
+
+        <div class="col-sm-12">
+          <fieldset>
+            
+            <input name="phone" type="text" class="form-control" id="phone" placeholder="Phone" [(ngModel)] ="Cquery.phone" required="">
+          </fieldset>
+        </div>
+
+        <div class="col-sm-6">
+          <fieldset>
+            
+            <input name="date1" type="date" class="form-control" id="date1" placeholder="From DD-MM-YY" [(ngModel)] ="Cquery.date_from"  required="">
+          </fieldset>
+        </div>
+
+        <div class="col-sm-6">
+          <fieldset>
+            <input name="date2" type="date" class="form-control" id="date2" placeholder="To DD-MM-YY" [(ngModel)] ="Cquery.date_to" required="">
+          </fieldset>
+        </div>
+        
+        <div class="col-lg-12">
+          <fieldset>
+            <textarea name="message" rows="6" class="form-control" id="message" placeholder="Notes" [(ngModel)] ="Cquery.message"  required=""></textarea>
+          </fieldset>
+        </div>
+        <div class="col-lg-12">
+          <fieldset style="text-align: center;">
+            <button type="submit" id="form-submit" class="filled-button" (click)="createQuery(queryForm)" value="Send"> -->
+              <!-- <span class="button__text" >-->Send Request <!-- </span>  -->
+              <!-- onclick="this.classList.toggle('button--loading')"  -->
+          <!-- </button>
+          </fieldset>
+        </div>
+      </div>
+    </form>
+  </div> -->

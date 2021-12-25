@@ -1,0 +1,66 @@
+
+    <div class="section" style="margin-bottom: 2.5rem;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading" >
+              <h2>Book Now</h2>
+            </div>
+    
+            <div class="bg-img">
+              <div class="content">
+                <header>Login Form</header>
+                <form #queryForm="ngForm"  method="POST" (ngSubmit)="createQuery(queryForm); queryForm.reset()"  id="contact" ngNativeValidate >
+                  <div class="field">
+                    <span class="fa fa-user"></span>
+                    <input  type="text" class="form-control" name="name" placeholder="Full Name" [(ngModel)] ="Cquery.name" required="">
+                  </div>
+                  <div class="field space">
+                    <span class="fa fa-user"></span>
+                    <input type="text" class="form-control" name="email"  placeholder="Enter email address" [(ngModel)] ="Cquery.email" required="">
+                  </div>
+                  <div class="field space">
+                    <span class="fa fa-lock"></span>
+                    <input type="text" class="form-control" name="phone" placeholder="Enter phone" [(ngModel)] ="Cquery.phone" required="">
+                  </div>
+                  <div class="field space">
+                    <i class="fas fa-calendar-day"></i>
+                    <input type="date" class="form-control" name="date_from" placeholder="Pick-up date/time" [(ngModel)] ="Cquery.date_from" required="">
+                  </div>
+                  <div class="field space">
+                    <span class="fa fa-lock"></span>
+                    <input type="date" class="form-control" name="date_from" placeholder="Pick-up date/time" [(ngModel)] ="Cquery.date_to" required="">
+                  </div>
+                  <div class="field space">
+                    <span class="fa fa-lock"></span>
+                    <input type="text" class="form-control" placeholder="Pick-up location" name="Pick-up location" [(ngModel)] ="Cquery.pickup" required="">
+                  </div>
+                  <div class="field space">
+                    <span class="fa fa-lock"></span>
+                    <textarea type="text" class="form-control" placeholder="message" name="message" [(ngModel)] ="Cquery.message" required=""></textarea>
+                  </div>      
+                  <div class="pass">
+                    <a href="#">Forgot Password?</a>
+                  </div>
+                  <div class="field">
+                    <input type="submit" value="Submit">
+                  </div>
+                </form>
+                <div class="login">Or login with</div>
+                <div class="links">
+                  <div class="facebook">
+                    <i class="fab fa-facebook-f"><span>Facebook</span></i>
+                  </div>
+                  <div class="instagram">
+                    <i class="fab fa-instagram"><span>Instagram</span></i>
+                  </div>
+                </div>
+                <div class="signup">Don't have account?
+                  <a href="#">Signup Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>

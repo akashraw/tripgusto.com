@@ -1,0 +1,298 @@
+
+<!-- Page Content -->
+<div class="page-heading about-heading header-text" [style]=tripVar.mbImg>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="text-content">
+            <h2>{{tripVar.title}}</h2>
+            <h4>{{tripVar.subtitle}}</h4>
+          </div>
+        </div>
+      </div>      
+    </div>
+    <div id="banner-btn" class="banner-class" >
+      <span class="contact-form">
+        <button type="submit" id="form-submit" data-toggle="modal" data-target="#queryModal" class="filled-buttonBannerGet" style=" margin-right: 2rem;">Get Quote</button>
+        <a href="https://api.whatsapp.com/send?phone=917906613988&amp;text=I want to know more about _*Trip*_" target="_blank">
+          <button class="filled-buttonWhats"><i  class="fab fa-whatsapp" style="font-size: 1.1em; font-weight: bold;"></i> WhatsApp</button>
+        </a>
+      </span>
+    </div>
+  </div>
+
+
+  
+<div class="container" style="transform: none;">
+  <div class="row">
+  
+    <div class="col-lg-8 " style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+      <div class="container" style="z-index: 4; margin-bottom: 6rem; 
+        box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12); ">
+
+
+  <div id="trip-detail" class="products">
+    <div class="container">
+      <div class="row">
+  <!--trip carousel with navi thumb end-->
+  
+        <div class="col-md-12">
+          
+          <table style="text-align: center; table-layout: fixed; margin-top: 35px;">
+            <thead id="trip-ico" style="text-align: center;">
+              <tr >
+                
+                <th>
+                  <div><i class="fas fa-rupee-sign" style="font-size:20px; color: #006D77;"></i></div>
+              </th>
+                <th>
+                    <div><i class="far fa-clock" style="font-size:20px; color: #006D77;"></i></div>
+                </th>
+                <th>
+                  
+                    <div><i class="fas fa-map-marker-alt" style="font-size:20px; color: #006D77;"></i></div>
+              
+                </th>
+              </tr>
+          </thead>
+          <tbody id="misc">
+            <tr>
+              <td>
+                <div>Starting at</div>
+              </td>
+              <td>
+                <div>Duration</div>
+              </td>
+              <td>
+                <div>Pick Up &amp; Drop:</div>
+              </td>
+            </tr>
+          </tbody>
+          <tbody id="trip-det">
+            <tr>
+              <td>
+                <div><strong style="font-size:20px; font-weight: bold; color: #006D77;">{{tripVar.price}}</strong></div>
+              </td>
+              <td>
+                <div><strong  style="font-weight: bold; font-size:20px; color: #006D77;">{{tripVar.duration}}</strong></div>
+              </td>
+              <td>
+                <div><strong style="font-weight: bold; font-size:20px; color: #006D77;">{{tripVar.pdlocation}}</strong></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+            <p id="about" >
+              {{tripVar.Overview.part1}} <br><br>        
+              {{tripVar.Overview.part2}} <br><br>   
+              {{tripVar.Overview.part3}} <br><br>   
+              {{tripVar.Overview.part4}}          
+            </p>         
+        </div>
+        <div class="col-md-12">
+          <!--trip carousel with navi thumb-->
+          <div class="container-fluid outer" style="box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12); margin-top: 10px; margin-bottom: 20px; padding-bottom: 15px;">
+            <div id="big" class="owl-carousel owl-theme">
+              <div class="item" *ngFor="let slide of tripVar.slides">
+              
+                <img [src]='slide' alt="" class="img-fluid wc-image img-responsive">
+              </div>
+            
+            </div>
+            <div id="thumbs" class="owl-carousel owl-theme ">
+              <div class="item" *ngFor="let slide of tripVar.slides">
+              
+                <img [src]="slide" alt="" class="img-fluid wc-image">
+              </div>
+              
+            </div>
+            
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--reveal end-->
+  
+      <div class="row" style="margin-top: 3rem;">
+             
+            <div class="col-md-12 col-sm-12" style="margin-bottom: 2rem; padding-bottom: 20px;">
+              <div class="container" >
+              <div class="tabbed " style=" padding-bottom: 30px;">
+                
+                <ul  class="nav nav-tabs nav-justified" id="myTab" role="tablist" data-background-color="red">
+                   <li class="nav-item active" role="presentation">
+                      <a class="nav-link " id="Itinerary-tab" data-toggle="tab" href="#Itinerary" role="tab" aria-controls="Itinerary" aria-selected="false"><p>Itinerary</p></a>
+                   </li>
+                   <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="Costing-tab" data-toggle="tab" href="#Costing" role="tab" aria-controls="Costing" aria-selected="false"><p>Costing</p></a>
+                 </li>
+                  <li class="nav-item" role="presentation">
+                   <a class="nav-link" id="Other_Info-tab" data-toggle="tab" href="#Other_Info" role="tab" aria-controls="Other_Info" aria-selected="false"><p>Other</p></a>
+                  </li>
+                   
+                   
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content ">
+                   <div class="tab-pane active" id="Itinerary" aria-labelledby="Itinerary-tab">
+                    <div class="section-heading">
+                      <h2>Itinerary</h2>
+                        </div> 
+                       <div class="accordion" id="accordionExample">
+                         <div class="card " *ngFor="let tripday of tripVar.Itinerary.days; let i=index;">
+                         
+                            <div class="card-header" data-toggle="collapse" [id]="i" style="padding: .5rem 0; margin-bottom: 1px">
+                               <h3 id="accord" class="mb-0 ">
+                                  <button type="button" class="btn btn-link collapsed " 
+                                   data-toggle="collapse" [attr.data-target]="['#'+'a'+ i]" aria-expanded="false" [attr.aria-controls]="'a'+i" >
+                                  {{tripday}} {{tripVar.Itinerary.head[i]}} 
+                                  </button>
+                               </h3>
+                            </div>
+                            <div [id]="'a'+i" class="collapse " [attr.aria-labelledby]="i"  data-parent="#accordionExample">
+                               <div class="card-body">
+                                  <p>{{tripVar.Itinerary.body[i]}}</p>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+
+                      
+
+
+                   </div>
+                   <div class="tab-pane" id="Costing" role="tabpanel" aria-labelledby="Costing-tab">
+                    <div class="row">
+                      <div class="col-md-12 col-lg-12">
+                          <div class="container" >
+                            <div class="section-heading">
+                         <h2>Costing</h2>
+                           </div>                    
+                            <table class="styled-table">
+                              <thead>
+                                  <tr class="active-row">
+                                      <th>Occupancy</th>
+                                      <th>Price</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr *ngFor="let cTable of tripVar.costing; let i=index;">
+                                      <td>{{tripVar.occupancy[i]}}</td>
+                                      <td>{{cTable}}</td>
+                                  </tr>
+                                  <!-- <tr class="active-row">
+                                      <td>Melissa</td>
+                                      <td>5150</td>
+                                  </tr> -->
+                                  <!-- and so on... -->
+                              </tbody>
+                          </table>
+                          
+                       </div>
+                      
+                     <!--inclusion and exclusion here fa-ul and fa-li is used for bullet style-->
+                   <div id="in-ex" class="container">
+                    <div class="section-heading">
+                      <h2>Inclusions</h2>
+                </div>
+                <ul class="fa-ul">
+                 <li *ngFor="let item of tripVar.inclusions">
+                     <span class="fa-li" style="font-size: 1em; color: #006622;"><i class="fas fa-check-circle"></i></span> {{ item }}
+                  </li>
+                </ul>
+                   
+                     <div class="section-heading">
+                           <h2>Exclusions</h2>
+                     </div>
+                     <ul class="fa-ul">
+                      <li *ngFor="let item of tripVar.excluded">
+                       <span class="fa-li" style="font-size: 1em; color: #cc0000;"><i class="fas fa-times-circle"></i></span>{{ item }}
+                       
+                      </li>
+                    </ul>            
+            </div>
+            <!--inclusion and exclusion ends-->
+              
+                </div>
+             </div>
+              </div>
+
+                   <div class="tab-pane" id="Other_Info" role="tabpanel" aria-labelledby="Other_Info-tab">
+                    <div class="container" style="margin-bottom: 3rem;">
+                      <div class="section-heading">
+                            <h2>Things To Carry</h2>
+                      </div>
+                      <ul class="fa-ul">
+                        <li *ngFor="let item of tripVar.TTC">
+                          <span class="fa-li" style="font-size: 1em; color: #32667a;"><i class="fas fa-arrow-alt-circle-right"></i></span>{{ item }}
+                         
+                        </li>
+                      </ul>     
+                 </div>
+                   </div>
+                </div>
+             </div>
+            
+
+            </div>
+      </div>
+      </div>
+  <!--map and contact-->
+  
+  
+  
+   <!--maps-->
+   <div class="section" id="map">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Map and Route</h2>
+          </div>
+          <div class= "map-responsive"  style="text-align: center; overflow: hidden;">
+           <iframe [src]="urlSafe " width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" ></iframe> 
+        </div>
+        </div> 
+      </div>
+      <div class="row" style="margin-top: 3em;">
+        <div class="col-md-12">   
+          <p>NOTE: Travellers residing outside Delhi are suggested to book trains/flights reaching Delhi not later than 4 PM on the trip start date. Similarly, on trip end date, book returning flight/trains leaving post 2 PM.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+  
+    </div>
+
+    <div class="col-lg-4"  style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+      <div id="enquire" class="products" [ngClass]="{'stick_element': stick_var, 'stick_element_after': stick_var_after} " >
+        <div class="container" >
+      <app-enquiry ></app-enquiry>  
+        </div>
+      </div>
+  </div>
+  
+</div>
+</div>
+
+
+ 
+
+
+  
+
+   
+  <app-footer></app-footer>
+    
+  <!-- Modal -->
+  <app-modal></app-modal>
+  <router-outlet></router-outlet>
+
+
+

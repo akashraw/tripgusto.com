@@ -1,0 +1,88 @@
+footer{
+    background: #121921;
+}
+
+.links li a{
+	background-color: #0000;
+	color: #7e7e7e;
+	
+	text-align: center;
+}
+
+.links li a:hover{
+	background-color: #0000;
+	color: #f33f3f;
+}
+
+
+
+ul.contacts li a{
+	
+	color: #7e7e7e;
+	font-size: inherit;
+	text-align: center;
+	transition: all .3s;
+}
+ul.contacts li a:hover{
+	background-color: #0000;
+	color: #f33f3f;
+}
+
+
+ul.social-icon li a {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	line-height: 50px;
+	background-color: #0000;
+	color: #7e7e7e;
+	
+	text-align: center;
+	transition: all .3s;
+}
+ul.social-icon li {
+	
+	background-color: #0000;
+	color: #7e7e7e;
+	
+	text-align: center;
+	
+}
+ul.social-icon li a:hover {
+	background-color: #0000;
+	color: #f33f3f;
+}
+ul.social-icon li {
+	display:inline-block;
+	margin-right: 3px;
+}
+
+ul.social-icon li:last-child {
+	margin-right: 0px;
+}
+
+ul#additional-links li {
+	align-content: center;
+	display: inline;
+}
+ul#additional-links li a{
+	color: #c2c2c2;
+	text-align: center;
+	font-size: .9rem;
+	display: inline;
+}
+ul#additional-links li a:hover {
+	background-color: #0000;
+	color: #f33f3f;
+}
+ul#additional-links li span{
+	color: rgb(102, 102, 102);
+}
+/*for border*/
+ul.link span {
+    width: 120px;
+    height: 2px;
+    background-color: #e1e1e1;
+    display: block;
+    margin: auto;
+}

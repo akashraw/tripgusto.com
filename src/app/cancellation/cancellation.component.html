@@ -1,0 +1,55 @@
+<div class="page-heading about-heading header-text" style="background-image: url(assets/images/banners/valley-a.jpg);">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="text-content ">
+            <h2>Cancellation Policy</h2>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="team-members">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+
+
+<h5>Cancellation Policy</h5><br>
+
+<h6>Backpacking Trips</h6><br>
+<ul>
+  <li *ngFor="let cancel of backpacking">
+    <i class="far fa-circle" style="padding-right: 1em ;"></i>{{cancel}} <br>
+</ul><br><br>
+
+<h6>Weekend Trips</h6><br>
+<ul>
+  <li *ngFor="let cancel of weekend">
+    <i class="far fa-circle" style="padding-right: 1em ;"></i>{{cancel}} <br>
+  </li>
+</ul><br><br>
+
+<h6>Long Trips and Treks</h6><br>
+<ul>           
+  <li *ngFor="let cancel of long">
+    <i class="far fa-circle" style="padding-right: 1em ;"></i>{{cancel}} <br>
+  </li>
+</ul><br><br>
+
+<h6>Customized Trips and Treks</h6><br>
+<ul>
+  <li *ngFor="let cancel of custom">
+    <i class="far fa-circle" style="padding-right: 1em ;"></i>{{cancel}} <br>
+  </li>
+</ul>
+
+        </div>
+    </div>
+</div>
+</div>
+
+<app-footer></app-footer>

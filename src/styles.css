@@ -1,0 +1,280 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~assets/css/fontawesome.css";
+@import "~assets/css/owl.carousel.css";
+@import "~assets/css/style.css";
+@import "~assets/css/owl.theme.default.css";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "~assets/css/trip.css";
+
+/* carousel category */
+
+
+.trips-slider{
+	margin-bottom: 30px;
+}
+
+.trips-slider .item{
+    background:rgba(255, 255, 255, 0.493);
+    margin:1.4rem;
+	margin-bottom: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+    opacity: 1;
+	width: fit-content;
+	-webkit-transform: scale3d(0.96,0.96,1);
+    transform: scale3d(0.96,0.96,1);
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+} 
+.trips-slider .shadows p{
+    font-family: inherit;
+    font-size: 17px;
+    line-height: 1.5;
+    margin:0 0 17px 0;
+    font-weight:300;
+}
+
+
+.trips-slider.owl-carousel .owl-item .shadows a{
+    width: fit-content;
+    
+}
+.trips-slider img{
+	border-radius: 6px;
+	margin-bottom: 6px;
+    background-color: #0000;
+    border: none;
+	max-height: 228px;
+	max-width: 307px;
+    
+}
+
+
+
+.trips-slider .item:hover {
+    opacity: 1;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+ }
+ 
+
+
+
+
+.trips-slider.item.shadows a{
+	position: relative;
+}
+.trips-slider.down-content{
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inherit;
+}
+.owl-theme .owl-dots .owl-dot {
+    outline: none;
+}
+
+
+
+
+
+
+
+/* testimonial owl */
+#customers-testimonials .owl-item.active.center .item{
+   opacity: 1;
+   -webkit-transform: scale3d(1,1,1);
+   transform: scale3d(1,1,1);
+}
+
+#customers-testimonials .item{
+   text-align: center;
+   padding:50px;
+   margin-bottom: 20px;
+   opacity: .3;
+   -webkit-transform: scale3d(0.8,0.8,1);
+   transform: scale3d(0.8,0.8,1);
+   -webkit-transition:all 0.3s ease-in-out;
+   -moz-transition:all 0.3s ease-in-out;
+   transition:all 0.3s ease-in-out;
+}
+
+
+
+
+.owl-carousel .owl-dots .owl-dot.active span,
+.owl-carousel .owl-dots .owl-dot:hover span,
+.owl-carousel .owl-dots .owl-dot:focus span{
+    background-color:#3190e7;
+    transform:translate3d(0px, -50%, 0px) scale(0.7);
+    outline: 0; 
+}
+.owl-carousel .owl-dots{
+    display: inline-block;
+    width:100%;
+    text-align:center;
+}
+
+.owl-carousel .owl-dots .owl-dot{
+    display: inline-block;
+}
+
+.owl-carousel .owl-dots .owl-dot span{
+    background: #3190e7;
+    display: inline-block;
+	opacity: .7;
+    height:8px;
+    margin:0 2px 5px;
+    transform:translate3d(0px, -50%, 0px) scale(0.3);
+    transform-origin: 50% 50% 0;
+    transition: all 250ms ease-out 0s;
+    width:8px;
+}
+.owl-theme .owl-dots .owl-dot {
+    outline: none;
+}
+
+
+/*for zoom and shadow effect for cate*/
+
+#product-display.product-item {
+	
+	text-align: center;
+    -webkit-transform: scale3d(0.96,0.96,1);
+    transform: scale3d(0.96,0.96,1);
+    -webkit-transition:all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+}
+#product-display.product-item:hover {
+	-webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+
+
+#product-display img{
+	border-radius: 6px;
+	margin-bottom: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    background-color: #0000;
+    border: none;
+    
+}
+
+
+table {
+	width: 100%;
+	margin-bottom: 40px;
+  }
+  
+
+.table-responsive {
+	text-align: center;
+	width: 100%;
+}
+
+
+.section-heading {
+	text-align: Center;
+	margin-bottom: 20px;
+	margin-top: 30px;
+	border-bottom: 0px solid #eee;
+}
+
+/*carousel with thumb navi */
+.outer { 
+	margin:0 auto;
+	max-width:800px;
+}
+#big .item {  
+	padding: 20px 0px; 
+	margin:2px; color: #FFF; 
+	border-radius: 3px; 
+	text-align: center;
+ }
+#thumbs .item { 
+	padding: 0px; 
+	margin:2px; 
+	 
+	border-radius: 3px; 
+	text-align: center; 
+	cursor: pointer; 
+	max-width: 150px;
+	max-height: 150px;
+}
+#thumbs .item h1 { 
+	font-size: 18px; 
+}
+#thumbs .current .item{ 
+	text-align: center;
+ }
+
+.owl-theme .owl-nav [class*='owl-'] {
+	 -webkit-transition: all .3s ease; 
+	 transition: all .3s ease; 
+	}
+.owl-theme .owl-nav [class*='owl-'].enabled:hover {
+	 background-color: #D6D6D6; 
+	}
+#big.owl-theme { 
+	position: relative; 
+}
+#big.owl-theme .owl-next, #big.owl-theme .owl-prev {
+	 background:#333; 
+	 width: 22px; 
+	 line-height:40px; 
+	 height: 40px; 
+	 margin-top: -20px; 
+	 position: absolute; 
+	 text-align:center; 
+	 top: 50%; 
+	}
+#big.owl-theme .owl-prev { 
+	left: 10px; 
+}
+#big.owl-theme .owl-next { 
+	right: 10px; 
+}
+#thumbs.owl-theme .owl-next, #thumbs.owl-theme .owl-prev { 
+	background:#333; 
+}
+#big .item .img{
+	box-shadow: 5px 10px 18px #888888;
+}
+.owl-stage-outer { 
+	overflow: visible;
+	}
+	
+
+/*reveal button*/
+.reveal {
+	width: 150px;
+	min-width: unset;
+	margin: .5rem;
+}
+.mat-tab-group {
+	margin-bottom: 48px;
+  }
+/*contact and map */
+.left-content a{
+	
+	color: #7e7e7e;
+	
+    font-weight: 700;
+	text-align: center;
+	transition: all .3s;
+}
+.left-content a:hover{
+	background-color: #0000;
+	color: #f33f3f;
+}
+
+/*list style for inclusion and exclusion*/
+#in-ex ul{
+	margin-left: 2em; margin-right: 2em;
+	margin-bottom: 1em;
+}

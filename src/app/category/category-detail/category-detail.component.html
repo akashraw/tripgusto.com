@@ -1,0 +1,42 @@
+<!--nCat trip main content-->
+
+<div class="page-heading about-heading header-text" [style]='capRoutePoster'>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="text-content">
+          <h2>{{capRoute}}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="products">
+  <div class="container">
+    <div class="row">
+
+      <!--<div >-->
+
+        <div class="col-md-4" *ngFor="let cate of nCat">
+         <div class="product-item">
+          <a [routerLink]="['/trips', cate.route]"><img [src]='cate.poster' alt=""></a>
+              <div class="down-content" style="text-align: center;">
+                    <a [routerLink]="['/trips', cate.route]"><h4>{{cate.title}}</h4></a>
+
+                    <small>
+                      <strong title="Cost">Starting at &nbsp;<i class="fas fa-rupee-sign"></i>&nbsp;&nbsp;{{cate.price}}</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                      <strong title="Length"><i class="far fa-clock"></i>&nbsp;&nbsp;{{cate.duration}}</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                      <strong title="Pick &amp; Drop"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;{{cate.pdlocation}}</strong>
+                    </small>                   
+                    
+                    
+             <!--</div >-->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div><!--nCat trip main content-->
+

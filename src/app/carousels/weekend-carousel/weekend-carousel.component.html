@@ -1,0 +1,33 @@
+<div class="trips-slider" style="padding-bottom:2em;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading ">
+          <h2>Weekend Getaways</h2>
+         <!-- <a routerLink="/all-trips" style="padding-right: 2vw;">View More <i class="fa fa-angle-right"></i></a> -->
+        </div>
+          
+        <div id="w-slider" class="owl-carousel owl-theme" >
+
+          <!-- weekend trips 1 -->
+          <div class="item" *ngFor="let trips of nCat; let i=index">
+            <div class="shadows">
+                
+              <a [routerLink]="['/trips', trips.route]"><img [src]=[trips.poster] alt=""></a>
+            
+            <div class="down-content" >
+              <a [routerLink]="['/trips', trips.route]"><h4>{{trips.title}}</h4></a>
+              <h6>Starting ₹{{trips.price}}</h6>
+              <small style="padding-top:2em ;">
+                   <strong title="Flight included"><i class="fa fa-calendar"></i> Spring</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                   <strong title="Flight included"><i class="far fa-clock"></i>{{trips.duration}}</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                   <strong title="Flight included"><i class="fas fa-map-marker-alt"></i>{{trips.pdlocation}}</strong>
+              </small>
+             </div>
+            </div>
+           </div>      
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
