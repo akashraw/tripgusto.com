@@ -12,7 +12,7 @@ export class EnquiryComponent implements OnInit {
   
   query: CData[];
 	Cquery: CData = { id : null , name: null, phone: null, email: null,
-                             pickup: null, date_from: null, date_to: null, message: null}
+                             pickup: null, date_from: null, date_to: null, message: null, when: null, where: null}
 	constructor(private apiService: ApiService) {}
 
   ngOnInit(){	}

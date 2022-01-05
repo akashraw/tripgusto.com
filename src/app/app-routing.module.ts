@@ -1,3 +1,5 @@
+import { SignInComponent } from './sign-in/sign-in.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 import { Title } from '@angular/platform-browser';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { CancellationComponent } from './cancellation/cancellation.component';
@@ -67,8 +69,11 @@ const routes: Routes = [
     path:'nopage',component:NoPageComponent, pathMatch:'full', data:{title: '404-No-page'}
   },
   {
-    path:'test',component:TestComponent, pathMatch:'full', data:{title: 'test'}
+    path:'signin',component:SignInComponent, pathMatch:'full', data:{title: 'Sign In'}
   },
+  {
+    path:'signup',component:SignUpComponent, pathMatch:'full', data:{title: 'Sign Up'}
+  }
 ];
 
 @NgModule({

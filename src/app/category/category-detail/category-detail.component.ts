@@ -30,16 +30,20 @@ export class CategoryDetailComponent implements OnInit, AfterViewInit {
   // Calling category details from service methods
   CategoryCase(snapped){
     switch (snapped){
-      case "weekend": this.capRoute="Weekend Getaway Trips"; 
+      case "weekend": 
+      this.capRoute="Weekend Getaway Trips"; 
       this.capRoutePoster="background-image: url(assets/images/banners/nako.jpg);"; break
 
-      case "backpacking": this.capRoute="Backpacking Trips"; 
+      case "backpacking": 
+      this.capRoute="Backpacking Trips"; 
       this.capRoutePoster="background-image: url(assets/images/banners/spiti-1.jpg);"; break
 
-      case "pilgrim": this.capRoute="Pilgrims"; 
+      case "pilgrim": 
+      this.capRoute="Pilgrims"; 
       this.capRoutePoster="background-image: url(assets/images/banners/kedar-badri-mb.jpg);"; break
 
-      case "trek": this.capRoute="Treks"; 
+      case "trek": 
+      this.capRoute="Treks"; 
       this.capRoutePoster="background-image: url(assets/images/banners/kedarkantha.jpg);"; break
     }
   }

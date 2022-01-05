@@ -6,5 +6,7 @@ export class CData {
     pickup: string;
     date_from: string;
     date_to: string;
+    when: string;
+    where: string;
     message: string;
 }
