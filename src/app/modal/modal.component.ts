@@ -18,7 +18,7 @@ export class ModalComponent implements OnInit {
 	constructor(private apiService: ApiService, private http:HttpClient) {}
 
   ngOnInit(){	
-    
+   
     }
 
 
@@ -33,8 +33,10 @@ export class ModalComponent implements OnInit {
     // form.value.date_from = this.Cquery.date_from;
     // form.value.date_to = this.Cquery.date_to;
     form.value.message = this.Cquery.message;
+    
 		this.apiService.createQuery(form.value).subscribe((query: CData)=>{
 			console.log("Product created, ", query);
+     
       alert("Your Query Has Been Submitted")
 		})
   }

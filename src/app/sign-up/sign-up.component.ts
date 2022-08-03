@@ -12,8 +12,8 @@ export class SignUpComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    var pass_field: HTMLElement = document.querySelector(".pass") as HTMLElement;
-    var showBtn: HTMLElement = document.querySelector(".show") as HTMLElement;
+    var pass_field = (<HTMLInputElement>document.querySelector(".pass"));
+    var showBtn = (<HTMLElement>document.querySelector(".show"));
     showBtn.addEventListener("click", function () {
       if (pass_field.type === "password") {
         pass_field.type = "text";
