@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tripgustodata": {
+      "hosting": {
+        "TripGusto": [
+          "tripgustodata"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tripgustodata"
+  }
+}
