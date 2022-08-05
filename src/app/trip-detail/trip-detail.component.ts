@@ -1,3 +1,5 @@
+import { ModalService } from './../modal.service';
+import { ModalComponent } from './../modal/modal.component';
 import { Component, HostListener, Inject, OnInit, AfterViewInit} from '@angular/core';
 import { TripClass } from '../TripDataClass';
 import { ActivatedRoute } from '@angular/router';
@@ -22,10 +24,12 @@ export class TripDetailComponent implements OnInit, AfterViewInit{
   capRoute: String;
 
   constructor(private route:ActivatedRoute, private tripService:TripService, 
-              public sanitizer: DomSanitizer, @Inject(DOCUMENT) public document, private titleService: Title) { this.getScreenSize();}
+              public sanitizer: DomSanitizer, @Inject(DOCUMENT) public document, private titleService: Title, public modalService:ModalService) { this.getScreenSize();}
  
               urlSafe: SafeResourceUrl;
               url:string;
+            
+        
 
   ngOnInit(): void {
         this.capRoute=this.route.snapshot.params['TripRoute']
@@ -33,29 +37,29 @@ export class TripDetailComponent implements OnInit, AfterViewInit{
         this.url=this.tripService.getTripInfos().find(o => o.route === this.capRoute).gmap;
         this.urlSafe= this.sanitizer.bypassSecurityTrustResourceUrl(this.url);
 
-        // Get the modal
-        var modal = document.getElementById("myModal");
+        // // Get the modal
+        // var modal = document.getElementById("myModa");
 
-        // Get the button that opens the modal
-        var cusbtn = document.getElementById("myBtn");
+        // // Get the button that opens the modal
+        // var cusbtn = document.getElementById("myBtn");
      
-        // Get the <span> element that closes the modal
-        var span: HTMLElement = document.getElementsByClassName("close")[0] as HTMLElement;
+        // // Get the <span> element that closes the modal
+        // var span: HTMLElement = document.getElementsByClassName("close")[0] as HTMLElement;
      
-        // When the user clicks the button, open the modal 
-        cusbtn.onclick = function() {
-          modal.style.display = "block";
-        }
+        // // When the user clicks the button, open the modal 
+        // cusbtn.onclick = function() {
+        //   modal.style.display = "block";
+        // }
       
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-          modal.style.display = "none";
-        }
-        window.onclick = function(event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
-        }
+        // // When the user clicks on <span> (x), close the modal
+        // span.onclick = function() {
+        //   modal.style.display = "none";
+        // }
+        // window.onclick = function(event) {
+        //   if (event.target == modal) {
+        //     modal.style.display = "none";
+        //   }
+        // }
 
       }
 

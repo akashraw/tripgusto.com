@@ -1,3 +1,4 @@
+import { ModalService } from './../modal.service';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
@@ -15,7 +16,7 @@ export class ModalComponent implements OnInit {
 	where=[{ id:1, whereTo: 'Trek'}, { id:2, whereTo: 'Backpacking Trip'}, { id:3, whereTo: 'Pilgrim'}, { id:4, whereTo: 'Weekend Trips'}, { id:5, whereTo: 'Roadtrip'}]
   Cquery: CData = { id : null , name: null, phone: null, email: null,
                              pickup: null, when: null, where: null, message: null, date_from: null, date_to: null}
-	constructor(private apiService: ApiService, private http:HttpClient) {}
+	constructor(private apiService: ApiService, private http:HttpClient, public modalService: ModalService) {}
 
   ngOnInit(){	
    

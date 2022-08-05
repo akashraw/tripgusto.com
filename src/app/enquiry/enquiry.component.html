@@ -1,15 +1,51 @@
   <!--enquiry-->
-  <div id="enquiry" class="section"  style="padding-top: 0; padding-bottom: 30px;">
-    <div class="container">
+  <div id="enquiry" class="section moda "  style="padding-top: 0; padding-bottom: 30px;">
+    <div class="container contentenquiry">
       <div class="row">
-        <div class="col-lg-12" style="z-index: 4; 
+        <div class="col-lg-12 " style="z-index: 4; 
         box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12); 
         margin-bottom: 2rem; padding-bottom: 1rem;">
           <div class="section-heading">
             <h2>Enquiry</h2>
           </div>
-  
-          <div class="contact-form">
+          <!-- new form -->
+          <form #queryForm="ngForm"  method="POST" (ngSubmit)="createQuery(queryForm); queryForm.reset()"  id="contact" ngNativeValidate>
+            <div class="field">
+              <span class="fa fa-user"></span>
+              <input type="text" required="" placeholder="Name *" name="name" [(ngModel)] ="Cquery.name">
+            </div>
+            <div class="field space">
+              <span class="fa fa-envelope"></span>
+              <input type="text" required="" placeholder="Email *" name="email" [(ngModel)] ="Cquery.email">
+            </div>
+            <div class="field space">
+              <span class="fa fa-mobile"></span>
+              <input type="text" required="" placeholder="Phone No. *" name="email" [(ngModel)] ="Cquery.phone">
+            </div>
+            <!-- <div id="when" class="field space">
+              <span class="fa fa-calendar-week"></span>
+              <select  required="" name="when" [(ngModel)] ="Cquery.when" >
+                  <option id="dis" value="null" disabled selected hidden >When do you wanna travel? *</option>
+                  <option *ngFor="let date of when" value="{{date.id}}">{{date.whenTo}}</option>
+                 
+              </select>
+            </div> -->
+            <!-- <div id="where" class="field space">
+              <span class="fa fa-search"></span>
+              <select  required="" [(ngModel)] ="Cquery.where" name="where" >
+                  <option id="diss" value="null" disabled selected hidden >What type a trip you want? *</option>
+                  <option *ngFor="let type of where" value="{{type.id}}">{{type.whereTo}}</option>
+                  
+              </select>
+            </div>  -->
+           
+            <div class="field space">
+              <input type="submit" value="Submit" >
+            </div>
+          </form>
+          
+          <!-- old form -->
+          <!-- <div class="contact-form">
             <form class="contact-form" id="contact" #queryForm="ngForm" (ngSubmit)="createQuery(queryForm); queryForm.reset()" ngNativeValidate method="POST" >
               <div class="row">
                 <div class="col-sm-12">
@@ -52,14 +88,12 @@
                 <div class="col-lg-12">
                   <fieldset style="text-align: center;">
                     <button type="submit" id="form-submit" class="filled-button"  value="Send">
-                      <!-- <span class="button__text" >-->Send Request <!-- </span>  -->
-                      <!-- onclick="this.classList.toggle('button--loading')"  -->
                   </button>
                   </fieldset>
                 </div>
               </div>
             </form>
-          </div>
+          </div> -->
         </div>
         <div class="col-lg-12">
           <div class="section-heading">

@@ -2282,12 +2282,15 @@ footer .inner-content p a {
 }
 @media (min-width: 991) {
 
+
+
 	.stick_element{
 		
 		margin-bottom: 30px;
 	  }
 }
-@media (max-width: 1080px) {
+@media (max-width: 1280px) {
+	
 	.banner .text-content h4 {
 		font-size: medium;
 	}

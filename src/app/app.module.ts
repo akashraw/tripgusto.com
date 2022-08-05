@@ -85,6 +85,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
+    
   ],
   providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}, Title, TitleService, CategoryService],
   bootstrap: [AppComponent]

@@ -1,10 +1,10 @@
 <!-- Modal -->
 
 
-  <div id="myModa" class="bg-img moda">
-      <div class="content modal-content">
+  <div id="myModa" class="bg-img modal" >
+      <div class="content  modal-content">
         
-        <h2>Get a call back <span class="close">&times;</span></h2>
+        <h2>Get a call back <span (click)="modalService.showDialog = false" class="close">&times;</span></h2>
         
        
         
@@ -55,7 +55,7 @@
             <input type="submit" value="LOGIN">
           </div> -->
           <div class="field space">
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" >
           </div>
         </form>
         <!-- <div class="login">Or login with</div>
